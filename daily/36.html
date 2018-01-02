@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html >
+  <head>
+     <meta charset="utf-8">
+     <title>flows</title>
+     <meta name="viewport" content="width=device-width,initial-scale=1.0,
+     maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+     <!-- <link rel="stylesheet" type="text/css" href="static/css/reset.css"> -->
+     <script src='http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js'></script>
+     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css">
+     <link rel="stylesheet" type="text/css" href="../css/font.css">
+     <!-- <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css"> -->
+    <!--  <link rel="stylesheet" type="text/css" href="../css/index.css"> -->
+     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <script type="text/javascript" src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script>
+     <script >
+       var app=angular.module('test',[])
+       app.controller('con1',function($scope,$http){
+         $scope.arr=[
+           {c:"客人不明白产品描述被改",tar:"1.html"},
+           {c:"发修改稿时你应该最先考虑的事",tar:"2.html"},
+           {c:"初稿",tar:"./files/draft.html"},
+           {c:"修改稿",tar:"./files/revise.html"},
+           {c:"客户确认",tar:"./files/sC.html"},
+           {c:"WMT确认",tar:"./files/wmt.html"},
+           {c:"送翻译",tar:"./files/translate.html"},
+           {c:"客户最终确认",tar:"./files/sFinalC.html"},
+           {c:"最终稿",tar:"./files/final.html"},
+           {c:"客供档案",tar:"./files/supplier.html"},
+           {c:"attentions",tar:"./files/attentions.html"},
+           {c:"packaging type",tar:"./files/tags.html"},
+           {c:"tags",tar:"./files/types.html"}
+         ]
+         $scope.nowpage=1;
+         $scope.pages=Math.ceil($scope.arr.length/9)
+         $scope.page=[]
+          for (var i = 1; i <= $scope.pages; i++) {
+            $scope.page.push(i)
+          }
+         $scope.show=function(n){
+           $scope.nowpage=n;
+         } 
+       })
+     </script>
+     <style type="text/css">
+       body{font-family: "Arial";font-size: 12px;}
+       .yellow{background: yellow;}
+       .message{padding: 20px;margin-top: 10px;}
+       table tr td{}
+       ul li{list-style: none;}
+       table{width: 30%;border:1px solid #ccc;}
+     </style>
+ </head>
+ <body>
+    <div class="list-group">
+    <a href="javascript:window.history.go(-1)" class="list-group-item danger" style="font-weight: bold;">
+         <span class="glyphicon glyphicon-chevron-left back" style="color: blue;">返回</span><span style="margin-left: 34%" class="disabled">做稿PF模版</span>
+      </a>
+   </div>
+    <div class="message">
+      <h4 style="color:red;font-weight: 150%;">Packaging form for WMT USA / MO2018 / IMP</h4>
+      <hr>
+     Dear supplier, <br>
+<br>
+<strong>PLEASE NOTE: </strong> <span style="color:red;text-decoration:underline;"> This is Not a commitment for product.</span>   <br>
+<br>
+<p>Due to packaging process timing, we must collect necessary information prior to commitments, so we can start adaptation in the event you receive a commitment for your item(s). </p>
+
+<p>Attached is a blank packaging form, which needs to be completed for the following items. </p>
+<table class="table table-bordered table-hover" style="width: 60%;">
+  <tr style="">
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+<p>Please return the completed packaging form(s) by <span style="background: yellow;">XX/XX/XXXX</span> .</p>
+
+<p>If your item(s) require photography:  Please submit images for approval OR notify Benchmark that item(s) packaging requires photography. </p>
+
+<p>
+The packaging process will take on average 4-6 weeks from the time you have submitted your complete and accurate packaging form and dielines to final file release depending on complexity. Failure to provide all of the required information will delay the start and completion of your packaging. <strong>PLEASE</strong></p>
+<p>
+Please note that we MUST have the items listed below before we will start the packaging process.</p>
+
+·       Packaging Form completely filled out including Section 5: Key Delivery Dates. <br>
+<br>
+ <ul>
+   <li><p>-        List only the contacts that you want to review the proof.  We will not move forward until all required approver(s) listed on the packaging form have completed their review.</p></li>
+   <li><p>-        All fields must be filled out.  Place an “NA” when a field is not applicable.</p></li>
+   <li><p>-        Warning verbiage, size, and location must be provided by supplier.</p></li>
+
+ </ul>
+
+·       Dielines for your product(s) <br>
+
+<ul>
+  <li><p>-        Adobe Illustrator file.  No images or art placed within dieline.</p></li>
+</ul>
+
+·       A low-res image of your item(s) <br>
+<ul>
+  <li><p>-        One solo shot per item type. </p></li>
+  <li><p>-        If there is more than one version (colorway, pattern), send a group shot along with the solo shot.</p></li>
+</ul>
+·       For PDQs, sidekicks, pallets and other display packaging <br>
+
+<ul>
+  <li><p>-        Photo of mockup display.</p></li>
+  <li><p>-        3D image to understand the structure; include inner pack</p></li>
+</ul>
+
+Packaging Process <br>
+
+<ul>
+  <li><p>·       Upon receipt of completed packaging form and dielines, Benchmark will prepare and send a quotation that must be signed and returned.</p></li>
+  <li>
+    <p>·       Once the signed quote is returned to Benchmark, artwork will be routed via ProofHQ, an online proofing system, for supplier review typically within 2-3 business days depending on the quantity and complexity of art files.</p>
+  </li>
+  <li>
+    <p>·       All revision comments should be added in ProofHQ.  Typically the supplier will have 2 business days to add feedback.</p>
+  </li>
+  <li><p>·       Once files are approved by both Walmart Buyer and supplier, Benchmark adds in Spanish translation (if needed) from a Walmart approved translation agency and re-submits translated files to the supplier for final approval.  </p></li>
+  <li>
+    
+<p>·       Once the translated files are approved by the supplier, final files are released within 1 working day of all proof stakeholders' approval, and Benchmark will archive the final approved files.</p>
+  </li>
+  <li>
+    <p>·       Please note that speed of artwork release depends on accurate proofing and timely stakeholder proof review and approval.</p> 
+  </li>
+</ul>
+<p>
+  If your item(s) qualifies for the Made in USA or Assembled in USA logo, please download the current Campaign Usage Guide to begin certifying your products online by going to Retail Link>Packaging Toolkits>U.S. Manufacturing Information> US Manufacturing Campaign Usage Guide.   The online tool called JUMP will help you with this process. You will need to register before you can start certifying your products online. Compliance is mandatory.  To begin certification of your products please visit http://engage.walmart-jump.com , register your company, and add your items’ information. Please refer to the attached document for more information.
+</p>
+
+<p>If you have any questions, please feel free to contact us. The team here at Benchmark is looking forward to working with you!</p>
+Thanks & Best Regards <br>
+ <br>
+Scott Xiong<br>
+========================<br>
+BMK//AHI International, Ltd.<br>
+Tel: +86  0769-8176-0350 / 8507-7650 / 8176-0348<br>
+Fax: +86  0769-8176-0349<br>
+
+<img src="../imgs/58.png">
+    </div>
+ </body>
+</html>

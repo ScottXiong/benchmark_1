@@ -1,0 +1,32 @@
+Hi David, Rosemary,
+
+The following 17 files are for your approval:
+
+D03CASE_1707E401_Envelopes_WCA59224_BX_R
+D03CASE_1707E402_Envelopes_WCA59121_BX_R
+D03CASE_1707E403_Envelopes_WCA59124_BX_R
+D03CASE_1707E404_WindowEnvelopes_WCA59126_BX_R
+D03CASE_1707E405_Envelopes_WCA59214_BX_R
+D03CASE_1707E406_Envelopes_WCA59111_BX_R
+D03CASE_1707E407_Envelopes_WCA59114_BX_R
+D03CASE_1707E408_Envelopes_WCA59116_BX_R
+D03CASE_1707E409_InvitationEnvelopes_WCA59512_BX_R
+D03CASE_1707E410_GreetingCardEnvelopes_WCA59514_BX_R
+D03CASE_1707E411_CatalogEnvelopes_WCA59610_INS_R
+D03CASE_1707E412_CatalogEnvelopes_WCA59614_INS_R
+D03CASE_1707E413_CatalogEnvelopes_WCA59310_INS_R
+D03CASE_1707E414_CatalogEnvelopes_WCA59311_INS_R
+D03CASE_1707E415_CatalogEnvelopes_WCA59314_BX_R
+D03CASE_1707E416_CatalogEnvelopes_WCA59411_INS_R
+D03CASE_1707E417_InvitationEnvelopes_WCA59511_BX_R
+
+Program: Casemate 
+Supplier: Quality Park Products 
+Buyer: David Farmer (D03) 
+Artwork due date: 2017/07/27 
+Shipdate: 2017/09/05 
+Status: for approval
+
+
+
+Note: we will send you the packaging form via a separate email, please check.－－－－－－－－>>>>若做稿里面有新增的packagingform，则要加上这句话。

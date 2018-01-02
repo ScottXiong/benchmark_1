@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html >
+  <head>
+     <meta charset="utf-8">
+     <title>业务部工作流程</title>
+     <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,
+     maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"> -->
+     <!-- <link rel="stylesheet" type="text/css" href="static/css/reset.css"> -->
+     <script src='http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js'></script>
+     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css">
+     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+     <script >
+       var app=angular.module('test',[])
+       app.controller('con1',function($scope,$http){
+
+         $scope.arr=[
+            {name:"Play Day",s:"PD(canada PD 系列 buyer：Harpreet Sandhu（D07)"},
+            {name:"CASE",s:'Casemate(GEM在做，也是推向沃尔玛市场的，只不过是人家自己的品牌，以B开始命名)'},
+            {name:'Way to Celebrate',s:'WTC'},
+            {name:'Mardi Gras',s:"MG"},
+            {name:'Hanukkah',s:"HAN"},
+            {name:'Easter',s:'EA'},
+            {name:"Valentine's Day",s:'VAL'},
+            {name:'Summer Decor',s:'SUM'},
+            {name:"St.Patrick's Day",s:'STP'},
+            {name:'Graduation',s:'GD'},
+            {name:"Mother's Day",s:'MO'},
+            {name:"Father's Day",s:'FA'},
+            {name:"Patriotic/America",s:'PA'},
+            {name:'Thanksgiving',s:'THX'},
+            {name:'Harvest',s:'HV'},
+            {name:'Halloween',s:'HW'},
+            {name:"Holiday Time",s:'HOL'},
+            {name:'Parent’s Choice',s:'PC'}
+         ];
+         $scope.brr=[
+         {name:'HangTag',s:'HT'},
+         {name:'Backer Card',s:'BC'},
+         {name:"Header Card",s:'HC'},
+         {name:'Insert',s:'INS'},
+         {name:'Poly Bag',s:'PLY'},
+         {name:'Adhesive Lable',s:'LB'},
+         {name:'Box',s:'BX'},
+         {name:'Belly Band',s:'BB'},
+         {name:'Wrap/Sleeve',s:'WR'},
+         {name:'PDQ',s:'PDQ'},
+         {name:'Sidekick',s:'SK'},
+         {name:'Pallet',s:'PLT'},
+         {name:'Endcap',s:'END'},
+         {name:'Open Stock Base',s:'OSB'},
+         {name:'Open Stock Tray',s:'OST'}
+         ]
+         
+         })
+     </script>
+     <style type="text/css">
+     
+     /*.box{margin-left:20%;font-size: 20px;color:green; }
+     p{text-indent: 24px;color:black;}
+     p:hover{color:red;}
+     h3{color:blue;}    
+     h4{color: green;}
+     img{transform: scale(0.8);width: 75%;margin: 20px auto;}
+     table{font-family: "新宋体";font-weight: bold;}
+     tbody tr td{background: #fff;}*/
+     </style>
+ </head>
+ <body>
+   <div ng-app='test' ng-controller='con1' class="container">
+   <h3>Packaging Type</h3>
+  <table class="table table-hover table-striped table-bordered text-center">
+     <thead>
+       <tr class="danger">
+         <th class="text-center">Packaging Type</th>
+         <th class="text-center">简称</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr ng-repeat="val in brr">
+         <td >{{val.name}}</td>
+         <td >{{val.s}}</td>
+       </tr>
+     </tbody>
+   </table>
+   
+   </div>
+ </body>
+</html>

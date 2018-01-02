@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html >
+  <head>
+     <meta charset="utf-8">
+     <title>flows</title>
+     <meta name="viewport" content="width=device-width,initial-scale=1.0,
+     maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+     <!-- <link rel="stylesheet" type="text/css" href="static/css/reset.css"> -->
+     <script src='http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js'></script>
+     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css">
+     <link rel="stylesheet" type="text/css" href="../css/font.css">
+     <!-- <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css"> -->
+     <link rel="stylesheet" type="text/css" href="../css/index.css">
+     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <script type="text/javascript" src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script>
+     <script >
+       var app=angular.module('test',[])
+       app.controller('con1',function($scope,$http){
+         $scope.arr=[
+           {c:"客人不明白产品描述被改",tar:"1.html"},
+           {c:"发修改稿时你应该最先考虑的事",tar:"2.html"},
+           {c:"初稿",tar:"./files/draft.html"},
+           {c:"修改稿",tar:"./files/revise.html"},
+           {c:"客户确认",tar:"./files/sC.html"},
+           {c:"WMT确认",tar:"./files/wmt.html"},
+           {c:"送翻译",tar:"./files/translate.html"},
+           {c:"客户最终确认",tar:"./files/sFinalC.html"},
+           {c:"最终稿",tar:"./files/final.html"},
+           {c:"客供档案",tar:"./files/supplier.html"},
+           {c:"attentions",tar:"./files/attentions.html"},
+           {c:"packaging type",tar:"./files/tags.html"},
+           {c:"tags",tar:"./files/types.html"}
+         ]
+         $scope.nowpage=1;
+         $scope.pages=Math.ceil($scope.arr.length/9)
+         $scope.page=[]
+          for (var i = 1; i <= $scope.pages; i++) {
+            $scope.page.push(i)
+          }
+         $scope.show=function(n){
+           $scope.nowpage=n;
+         } 
+       })
+     </script>
+     <style type="text/css">
+       img{border-bottom: 1px dotted #ccc;}
+       h3{font-family: "Arial";font-size: 20px;line-height: 20px;}
+       span{color: red;}
+       #message{border: 1px solid #ccc;padding: 15px;width: 90%;}
+     </style>
+ </head>
+ <body>
+    <div class="list-group">
+    <a href="javascript:window.history.go(-1)" class="list-group-item danger" style="font-weight: bold;">
+         <span class="glyphicon glyphicon-chevron-left back" style="color: blue;">返回</span><span style="margin-left: 34%" class="disabled">PEN(2/2)</span>
+      </a>
+  </div>
+   <div ng-app='test' ng-controller='con1'>
+   <div class="media">
+  <a class="pull-left" href="#">
+    <img class="media-object" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1511928992157&di=5d2632ab476b0321c87d61a72e297fe6&imgtype=0&src=http%3A%2F%2Fuploads.xuexila.com%2Fallimg%2F1703%2F1QSV108-2.jpg" style="border-radius:50%;width: 150px;height: 150px;">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading gradient">Second Approval</h4> <br>
+      2017-11-29 07:10
+    <!-- Nested media object -->
+    <div class="media">
+      <table class="table table-hover table-bordered table-stripped" style="width:90%;">
+          <thead>
+              <tr class="success">
+                  <th>Person</th>
+                  <th>Right</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Chris</td>
+                  <td>Moderator,Disabled</td>
+              </tr>
+              <tr>
+                  <td>Darla Box</td>
+                  <td>Moderator,Disabled</td>
+              </tr>
+              <tr class="danger">
+                  <td>cawmpackaging@walmart.com</td>
+                  <td>Reviewer&Approver,DailySummery</td>
+              </tr>
+              <tr>
+                  <td>greg.vandenbrink@walmart.com</td>
+                  <td>Reviewer,Disabled</td>
+              </tr>
+              <tr class="info">
+                <td>david.farmer@walmart.com</td>
+                <td>Reviewer&Approver,DailySummery</td>
+              </tr>
+              <tr class="warning">
+                <td>melkon@continental-fs.ca</td>
+                <td>Reviewer&Approver,DailySummery</td>
+              </tr>
+          </tbody>
+      </table>
+      <div id="message">
+          <h5>Subject:PEN2018/Continental_Filing/C171151</h5>
+          Hi Rosemary, David, Melkon, <br>
+          <br>
+         The following <span>2 files</span> are for your <span>approval</span>:<br>
+          <br>
+         <span>Note to supplier: please provide the photos.</span><br>
+           <br>
+           D03PEN_17115101_FileFolders_333896-46925_INS_R<br>
+           D03PEN_17115102_FileFolders_333889-41925_INS_R<br>
+           <br>
+           Program: Pen+Gear <br>
+           Supplier: Continental Filing System Inc.<br>
+           Buyer: David Farmer (D03) <br>
+           Status:  for approval<br>
+      </div>
+    </div>
+  </div>
+</div>
+ </body>
+</html>

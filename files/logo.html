@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>case</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../node_modules/amazeui/dist/css/amazeui.css">
+	<script type="text/javascript" src="../node_modules/amazeui/dist/js/amazeui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/animate.css/3.1.0/animate.min.css">
+    <style type="text/css">
+        body{font-family: "Arial"}
+    	ul li{list-style: none;}
+      /*  .box{;border: 1px solid #ccc;}*/
+        h4{color:#f60;}
+        p{text-indent: 30px;}
+        img{border-bottom: 1px solid #ccc;border:1px solid #ccc;margin:3px 5px;}
+        img:hover{transform: scale(1.5);}
+    </style>
+    <script >
+       var app=angular.module('test',[])
+       app.controller('con1',function($scope,$http){
+         $scope.arr=[
+          {p:"../imgs/39.png",n:"blister lable"},
+          {p:"../imgs/40.png",n:"Easter"},
+          {p:"../imgs/41.png",n:"VAL"},
+          {p:"../imgs/42.png",n:"Play Day"},
+          {p:"../imgs/43.png",n:"BW"},
+          {p:"../imgs/44.png",n:"Great Value"},
+          {p:"../imgs/45.png",n:"ONN"}
+
+         ]
+         $scope.now=0
+         $scope.scaleUp=function(n){
+          $scope.now=n
+         }
+         // $scope.add=function(){
+         // setInterval(function(){
+         //    $scope.now++
+         //  if ($scope.now==6) {
+         //    $scope.now=0
+         //  }
+         //     $scope.$apply()
+         //  },2000)
+         // }
+       })
+     </script>
+     <style type="text/css">
+   /*  	.box{width:32%;display: inline-block;margin: 5px;}
+     	.box h3{text-align: center;}*/
+     </style>
+</head>
+<body>
+<div ng-app='test' ng-controller='con1' style="margin-top: 15px">	
+   <div class="box"  style="display: inline-block;padding:3px;width: 70%;margin: 0 auto;">
+   	<img ng-repeat="val in arr"  src={{val.p}} width="30" height="30" ng-mouseover="scaleUp($index)">
+  <!--  </div> <button class="btn btn-success" ng-click="add()">自动浏览</button> -->
+   <div>
+     <img src={{'../imgs/'+(39+now)+'.png'}} width="300" height="300" style="transform: scale(1);margin: 50px;border-radius: 10px;">
+     <h3 ng-repeat="val in arr" ng-show="now==$index" class="text-center" style="display: inline;font-weight:bold;font-size: 30px;">{{val.n}}</h3>
+   </div>
+</div>
+</div>
+</body>
+</html>

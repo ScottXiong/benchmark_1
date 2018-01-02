@@ -1,0 +1,81 @@
+body{
+	background: url("http://img2.imgtn.bdimg.com/it/u=3928994227,3303023879&fm=214&gp=0.jpg") cover;
+}
+.containers{
+	width: 75%;
+	margin: 0 auto;
+	background: red;
+}
+ul li{
+	list-style: none;
+}
+ul li a:hover{
+	background: #ccc;
+}
+.center{
+	text-align: center;
+}
+.center>h1{
+ color: #f60;
+}
+p{
+	font-family: "新宋体";
+	font-size: 20px;
+	color: #e96;
+}
+.tittle{
+	font-size: 50px;
+	margin-top: 40px;
+	color: #f60;
+}
+.wrapper{
+	width: 100%;
+
+}
+.wrapper .left{
+	margin-left: 8%;
+	width: 12%;
+	height: 100%;
+	float: left;
+}
+.wrapper .left-r{
+	
+	height: 100%;
+	float: right;
+}
+.wrapper .right{
+	width: 60%;
+	height: 100%;
+	float: left;
+	}
+.top{
+	height: 50px;
+}
+
+.box{
+      width: 25px;
+      height: 25px;
+      background: #67CF22;
+      display: inline-block;
+      animation: aa 1.5s ease-out infinite;
+    }
+    @keyframes aa{
+    0{transform: perspective(70px) rotateX(0) rotateY(0);}
+    50%{transform: perspective(70px) rotateX(180deg) rotateY(0);}
+    100%{transform: perspective(70px) rotateX(180deg) rotateY(180deg);
+    }
+.ring{
+    height: 50px;
+    border:1px solid #ccc;
+}
+.gradient {  
+	    display: inline-block;
+	    font-size: 60px;
+	    font-family: 'Comic Sans MS';
+	    background-image: -webkit-gradient(linear, left center, right center, from(rgba(176, 31, 184, 1)), to(rgba(255, 89, 76, 1)));
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+	}; 
+	.top-center{
+		font-size:16px;
+	}

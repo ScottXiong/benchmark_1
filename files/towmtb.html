@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../node_modules/amazeui/dist/css/amazeui.css">
+	<script type="text/javascript" src="../node_modules/amazeui/dist/js/amazeui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<style type="text/css">
+body{font-family: "Arial";font-weight:110%;}
+span{color:red;}
+h3{color: red;}
+ul li{list-style: none;}
+</style>
+<body>
+<div class="list-group">
+    <a href="javascript:window.history.go(-1)" class="list-group-item danger" style="font-weight: bold;">
+         <span class="glyphicon glyphicon-chevron-left back" style="color: blue;">返回</span><span style="margin-left: 34%" class="disabled">客供档案给WMT确认</span>
+      </a>
+  </div>
+<div style="padding:15px;">
+<!-- <button class="btn btn-success b1">01</button> <button class="btn btn-success b2">02</button>
+ -->
+ <ul>
+ 	<li><h4>1.Add the buyer,modify the right to Riewer & Approval, Daily Summery.</h4></li>
+ 	<li><h4>2.Write the message just as below:</h4></li>
+ </ul>
+ <div class="ui divider"></div>
+ <div style="padding: 15px;width: 600px;border: 1px solid #ccc;margin-left: 80px;">
+   
+	Hi Wendy, Brian, <br>
+<br>
+The following 10 <span>SUPPLIER CREATED files</span> are for your <span>approval</span>:<br>
+<br>
+VAL18_DANDEE_DecorativePillow_KV715097_13_HT_R1<br>
+VAL18_DANDEE_DecorativePillow_KV822108_1_HT_R1<br>
+VAL18_DANDEE_DecorativePillow_KV822150AA18_HT_R1<br>
+VAL18_DANDEE_DecorativePillow_KV822240_HT_R1<br>
+VAL18_DANDEE_HangingDecor_KV461505AA18_HT_R1<br>
+VAL18_DANDEE_HangingDecor_KV576926AA18_HT_R1<br>
+VAL18_DANDEE_HangingDecor_KV715178AA_HT_R1<br>
+VAL18_DANDEE_MyFirstValentine_KB821743AA_HC_R2<br>
+VAL18_DANDEE_MyFirstValentine_KB821743AA_SK_R2<br>
+VAL18_DANDEE_PetToy_KD829029AA_HT_R1<br>
+
+<br>
+Program: Valentine's Day <br>
+Supplier: Dandee International Limited <br>
+Buyer: Wendy Milstead (D18) <br>
+Artwork due date: 08/22/2017 <br>
+Packout date: 09/25/2017 <br>
+Shipdate: 10/22/2017 <br>
+Status: for approval<br>
+
+
+</div>
+
+<script>
+	$(function(){
+		$('.b2').on('click',function(){
+			$('.bbb').html('the updated ')
+		})
+		$('.b1').on('click',function(){
+			$('.bbb').html('')
+		})
+	})
+</script>
+</body>
+</html>

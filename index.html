@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html >
+  <head>
+     <meta charset="utf-8">
+     <title>业务流程</title>
+     <meta name="viewport" content="width=device-width,initial-scale=1.0,
+     maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+     <!-- <link rel="stylesheet" type="text/css" href="static/css/reset.css"> -->
+     <script src='http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js'></script>
+     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css">
+     <!-- <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css"> -->
+      <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" type="text/css" href="css/index.css">
+     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <script type="text/javascript" src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script>
+    
+     <style type="text/css">
+       body{background:url(http://pic2.16pic.com/00/21/38/16pic_2138998_b.jpg);z-index: 19;background-size: cover;}
+       /*.right{background: #ccc;}*/
+     </style>
+     <script type="text/javascript">
+       setInterval(function () {
+          var time=new Date().toLocaleTimeString();
+          if (time.indexOf("G")>-1) {
+            var time=time.slice(5)
+          }
+          $(function () {
+              // $('.aa').html(time)
+          })
+      },1000);
+     </script>
+     <script >
+       var app=angular.module('test',[])
+       // "PD系列的buyer Harpreet Sept 22-29th 请假,期间将由Aamir.Hanif@walmart.com 确认档案", 
+       app.controller('con1',function($scope,$http){
+         $scope.news=["Hi ALL, 现在WMT在测试把模版放到box让approved supplier去下载。（因为有客人去投诉我们说我们不给模版，所以他们才做不好档案。。。）这样以后客人要模版就是问WMT要，我们不用给。在WMT没有通知实行这个方式之前，不管是谁问我们要模版我们都给，同时抄送给Charla和Michelle","Daniela Cviticanin is replacing Mark Ruffalo. Please be sure to include her as a reviewer and approver for all of Hardlines Holiday Time packaging artwork.","elizabeth.hernandez@samsclub.com","Please note - ‘VSN” is Walmart language. Please do not use it with non-Walmart projects. It will cause confusion. See Cherie’s email from earlier - she’s asking what it means - so please use “stock number” for non-Walmart clients and projects.","IMP的，记得抄送charla, michelle","请注意：加拿大BW/ONN的这个buyer：Jason Goldstein(D87) 替换为Daniel Amorim Daniel.Amorim@walmart.com"," GV系列Amits负责的给WMT确认时不用抄送给Justin.Carriero@walmart.com"]
+         $scope.arr=[
+           // {c:"新case",tar:"./files/case.html"},
+           // {c:"确认报价",tar:"./files/quotation.html"},
+           {c:"流程图",tar:"./files/flowss.html"},
+           {c:"初稿",tar:"./files/draft.html"},
+          //  {c:"修改稿",tar:"./files/revise.html"},
+           // {c:"客户确认",tar:"./files/sC.html"},
+           {c:"WMT确认",tar:"./files/wmt.html"},
+           {c:"translations",tar:"./files/translate.html"},
+          //  {c:"客户最终确认",tar:"./files/sFinalC.html"},
+           {c:"最终稿",tar:"./files/final.html"},
+          //  {c:"attentions",tar:"./files/attentions.html"},
+          //  {c:"包装/系列",tar:"./files/tags.html"},
+           // {c:"包装类型",tar:"./files/types.html"},
+          //  {c:"日常总结",tar:"./daily/index.html"},
+           // {c:"新增要求",tar:"./files/add.html"},
+          //  {c:"客户简称",tar:"./files/short.html"},
+          //  {c:"buyers",tar:"./files/buyers.html"},
+           // {c:"Skype",tar:"./files/skype.html"},
+           {c:"print",tar:"./files/print.html"},
+           {c:"Check",tar:"./files/forcheck.html"},
+           // {c:"[benchmark]",tar:"./files/benchmark.html"},
+           // {c:"completed",tar:"./files/completed.html"},
+          //  {c:"words",tar:"./files/words.html"},
+           {c:"search",tar:"./files/ofensee1.html"},
+           // {c:"给WMT纪录",tar:"./files/frecord.html"},
+           // {c:"TL翻译",tar:"./files/translation.html"},
+           {c:"PHQ加人",tar:"./files/people.html"},
+          //  {c:"各大logo",tar:"./files/logo.html"},
+           // {c:"各大logo",tar:"./files/semantic.html"}
+           // {c:"USA PF 文案",tar:"./files/pf.html"},
+           // {c:"常见修改点归纳",tar:"./files/reviseOffenSee.html"},
+           // {c:"晚班注意事项",tar:"./files/night.html"}
+         ]
+       })
+     </script>
+ </head>
+ <body>
+<!--  <div class="sky" style="height: 80px;">
+  <div class="clouds_one"></div>
+  <div class="clouds_two"></div>
+  <div class="clouds_three"></div>
+  
+</div> -->
+<style type="text/css">
+   .box{
+      width: 25px;
+      height: 25px;
+      background: rgb(65, 187, 21);
+      display: inline-block;
+      animation: aa 1.6s ease-out infinite;
+    }
+    @keyframes aa{
+    0{transform: perspective(70px) rotateX(0) rotateY(0);}
+    50%{transform: perspective(70px) rotateX(180deg) rotateY(0);}
+    100%{transform: perspective(70px) rotateX(180deg) rotateY(180deg);}
+</style>
+
+<div class="top center"><h1 style="font-size:26px;font-family: 'Lavenda'"><div class="box"></div><span class="gradient" ></span>Benchmark<span class="aa" style="font-size: 18px;color: red;"></span></h1></div>
+ <!-- <ul>
+     <li> <a href="./files/usaRule.html" target="_blank">usa/proof</a></li>
+     <li><a href="./files/canadaRule.html" target="_blank">canada</a></li>
+ </ul> -->
+   <div ng-app='test' ng-controller='con1'>
+      <!-- 最外层start -->
+      <div class="wrapper containers">
+        <div class="left" style="background: #FAF7E8;padding: 20px;border-radius:8px;">
+          <ul ng-repeat="v in arr">
+            <li class="col-md-offset-2">
+              <a href={{v.tar}} target="myFrame" ng-click="add()">{{v.c}}</a>
+            </li>
+          </ul>
+        </div>
+        <div class="right col-md-2">
+          <iframe width="100%" height="850px" name="myFrame" frameborder="0" style="overflow: hidden;border-radius:5px;">
+            <div id="scott">
+               <h3>Scott:</h3> 
+               <h4>It may take much time for the first loading, since the server is located in USA. </h4>
+            </div>
+          </iframe>
+        </div>
+      </div>
+      <!-- 最外层end --> 
+     <!--  <a href="aa.html" target="_blank">click me</a>  -->
+
+   </div>
+
+ </body>
+</html>

@@ -1,0 +1,10 @@
+.gradient {  
+	    display: inline-block;
+	    font-size: 16px;
+	    font-weight: 150%;
+	    font-family: 'microsoft yahei';
+	    background-image: -webkit-gradient(linear, left center, right center, from(rgba(176, 31, 184, 1)), to(rgba(255, 89, 76, 1)));
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+	}; 
+body {font-family:"Arial";}	

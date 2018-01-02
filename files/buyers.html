@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html >
+  <head>
+     <meta charset="utf-8">
+     <title>buyer</title>
+     <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,
+     maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"> -->
+     <!-- <link rel="stylesheet" type="text/css" href="static/css/reset.css"> -->
+     <script src='http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js'></script>
+     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css">
+     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <style type="text/css">
+       span{color:blue;}
+     </style>
+     <script >
+       var app=angular.module('test',[])
+       app.controller('con1',function($scope,$http){
+        $scope.arr=[
+           {name:"May Cheung",de:"D18",brand:"VAL",country:"USA",co:"Qtop"},
+           {name:"Wendy Milstead ",de:"D18",brand:"EA,VAL,Summer ",country:"USA",co:"Gemmy,Clever_Factory,UCP_International"},
+           {name:"Elizabeth Hernandez(新官上任) ",de:"D67",brand:"VAL,EA",country:"USA",co:"Mello_Smello,Brand_Castle,Long_King"},
+           {name:"Tanya Ellis",de:"D02",brand:"Equate ",country:"Canada",co:"Shummi"},
+           {name:"David Farmer",de:"D03",brand:"Casemate",country:"Canada",co:"Quality_Park,Milan"},
+           {name:"Harpreet Sandhu",de:"D07",brand:"PD",country:"Canada",co:"Qtop,Way_Dong"},
+           {name:"Teresa Parker",de:"D67",brand:"VAL,EA",country:"USA",co:"Clever_Factory"},
+           {name:"Jason Goldstein ",de:"D87",brand:"ONN,Black Web ",country:"Canada",co:"DS_Cable,Luxshare"},
+           {name:"Betty Cash",de:"D67",brand:"Way To Celebrate,St Patrick's Day,St.Patrick's Day  ",country:"USA",co:"GT_Plus,Rubies,Dan_Dee"},
+           {name:"Erin Chiyen ",de:"D22",brand:"Holiday Time ",country:"CAN",co:"Xin_Hai_Jin"},
+           {name:"Samantha Miller",de:"D44",brand:"Holiday Time",country:"USA",co:"Cole_Ashcroft"},
+           {name:"ng Lim",de:"D17",brand:"Holiday Time",country:"Canada",co:"Universal Candle"},
+           {name:"Nikesh Dusara",de:"D06",brand:"GV",country:"Canada",co:"GPO"}
+           // {name:"",de:"",brand:"",country:"",co:""},
+           // {name:"",de:"",brand:"",country:"",co:""},
+           // {name:"",de:"",brand:"",country:"",co:""},
+           // {name:"",de:"",brand:"",country:"",co:""}
+        ]
+       $(function() {
+          $('#inputPassword').keyup(function(){
+              var Match=$('.list-group-item').filter(":contains('" +($(this).val()) + "')")
+          $('.aaa').html(Match.length)
+          // }).keyup();//DOM加载完时，绑定事件完成之后立即触发
+         })
+      });
+         })
+     </script>
+     <style type="text/css"> 
+     </style>  
+ </head>
+ <body>
+   <div ng-app='test' ng-controller='con1' class="container">
+    <h3>buyer信息统计</h3>
+    <table class="table table-hover table-striped table-bordered text-center">
+      <thead>
+         <tr class="success">
+           <th class="text-center">Buyer</th>
+           <th class="text-center">Department</th>
+           <th class="text-center">Brand</th>
+           <th class="text-center">Country</th>
+           <th class="text-center">Partner</th>
+         </tr>
+         <tbody>
+           <tr ng-repeat="v in arr">
+              <td >{{v.name}}</td>
+              <td>{{v.de}}</td>
+              <td>{{v.brand}}</td>
+              <td>{{v.country}}</td>
+              <td>{{v.co}}</td>
+           </tr>
+         </tbody>
+      </thead>
+    </table>
+       <H3 style="color: firebrick;">以后加拿大的只要是有加Wendy Chan 的，将deadline改成3天 </H3>
+      <!--  <img src="../imgs/17.png" alt=""> -->
+       <a href="javascript:void(0)">ing.lim@walmart.com</a>无需确认
+       <p><span>Daniela Cviticanin</span> is replacing <span>Mark Ruffalo</span>. Please be sure to include her as a <span>reviewer and approver</span> for all of <span style="color:red;">Hardlines Holiday Time</span> packaging artwork.</p>
+   </div>
+ </body>
+</html>

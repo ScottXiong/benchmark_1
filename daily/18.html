@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html >
+  <head>
+     <meta charset="utf-8">
+     <title>flows</title>
+     <meta name="viewport" content="width=device-width,initial-scale=1.0,
+     maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+     <link rel="stylesheet" type="text/css" href="../css/font.css">
+     <!-- <link rel="stylesheet" type="text/css" href="static/css/reset.css"> -->
+     <script src='http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js'></script>
+     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css">
+     <!-- <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css"> -->
+    <!--  <link rel="stylesheet" type="text/css" href="../css/index.css"> -->
+     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <script type="text/javascript" src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script>
+     <script >
+       var app=angular.module('test',[])
+       app.controller('con1',function($scope,$http){
+         $scope.arr=[
+           {c:"客人不明白产品描述被改",tar:"1.html"},
+           {c:"发修改稿时你应该最先考虑的事",tar:"2.html"},
+           {c:"初稿",tar:"./files/draft.html"},
+           {c:"修改稿",tar:"./files/revise.html"},
+           {c:"客户确认",tar:"./files/sC.html"},
+           {c:"WMT确认",tar:"./files/wmt.html"},
+           {c:"送翻译",tar:"./files/translate.html"},
+           {c:"客户最终确认",tar:"./files/sFinalC.html"},
+           {c:"最终稿",tar:"./files/final.html"},
+           {c:"客供档案",tar:"./files/supplier.html"},
+           {c:"attentions",tar:"./files/attentions.html"},
+           {c:"packaging type",tar:"./files/tags.html"},
+           {c:"tags",tar:"./files/types.html"}
+         ]
+         $scope.nowpage=1;
+         $scope.pages=Math.ceil($scope.arr.length/9)
+         $scope.page=[]
+          for (var i = 1; i <= $scope.pages; i++) {
+            $scope.page.push(i)
+          }
+         $scope.show=function(n){
+           $scope.nowpage=n;
+         } 
+       })
+     </script>
+     <style type="text/css">
+       img{border-bottom: 1px dotted #ccc;}
+       h3{font-family: "Arial";font-size: 20px;text-indent: 20px;color:purple;line-height: 30px;}
+       h3:hover{color: blue;text-indent: 20px;}
+       ul li {list-style: none;}
+       /*body{background: #ccc;}*/
+     </style>
+ </head>
+ <body>
+  <div class="list-group">
+    <a href="javascript:window.history.go(-1)" class="list-group-item danger" style="font-weight: bold;">
+         <span class="glyphicon glyphicon-chevron-left back" style="color: blue;">返回</span><span style="margin-left: 34%" class="disabled">日常case总结</span>
+      </a>
+  </div>
+   <div ng-app='test' ng-controller='con1'>
+   <div class="media">
+  <a class="pull-left" href="#">
+    <img class="media-object" src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2066011872,151578576&fm=27&gp=0.jpg" style="border-radius:50%;width: 150px;height: 150px;">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading gradient">LNC case总结</h4><br>
+      2017-08-18 14:48
+    <!-- Nested media object -->
+    <div class="media">
+      <ul>
+        <li>1.LNC除非客人自己要求用邮件给档案，一帮情况下默认都是用PHQ传档案</li>
+        <li>2.Files with translation for LNC / B170885－－－》这个邮件错误，这种邮件是适合WMT的给加翻译的case的模板，但是LNC是跟wmt完全没有关系的我们另外一家客人，回来翻译，加了翻译了，要用proofhq上传档案，proofhq上面有专门传这家客人档案的文件夹，下面有分我们给这家客人所做的系列，看档案上面的logo可以看出是哪个系列，然后传到相应系列的文件夹里面，加的人只有chris, darla, 加上客人cherie是reviewer and approval。</li>
+        <li>3.LNC我们主要有两个联系人：<br>
+Cherie—是负责跟我们确认档案和档案;Robert Record—也叫bob，是专门负责下印刷订单给我们，当我们收到印刷订单时（也就是po），我们要做一个印刷新做稿，将订单存到相应做稿的文件夹里，然后制作任务单，写上请根据做稿订单找出最终稿，当设计师流单过来时，请将最终稿的路径和订单一起通知我们的印刷部门，这样就可以结束此任务单了</li>
+      </ul>
+    </div>
+  </div>
+</div>
+ </body>
+</html>

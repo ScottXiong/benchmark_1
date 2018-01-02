@@ -1,0 +1,109 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../node_modules/angular/angular.js"></script>
+	<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../node_modules/amazeui/dist/css/amazeui.css">
+	<script type="text/javascript" src="../node_modules/amazeui/dist/js/amazeui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<style type="text/css">
+body{font-family: "Arial";}
+table tr:hover{background: #ccc;}
+button{margin-left: 10px;margin-bottom: 10px;}
+span{color: red;}
+</style>
+<body>
+<div class="list-group">
+    <a href="javascript:window.history.go(-1)" class="list-group-item danger" style="font-weight: bold;">
+         <span class="glyphicon glyphicon-chevron-left back" style="color: blue;">返回</span><span style="margin-left: 34%" class="disabled">CWMT Confirmed</span>
+      </a>
+  </div>
+<div style="padding: 8px;">
+	<p>Canada发proofHQ时要加上buyer和greg，其邮箱和权限如下：</p>
+	<table style="width:75%;margin-left:15px;" class="table table-hover table-bordered table-striped" >
+       <thead>
+         <tr class="success ">
+          <td>Email</td>
+          <td>right</td>
+       </tr>
+       </thead>
+       <tr>
+          <td>christ</td>
+          <td>Moderator,Disabled</td>
+       </tr>
+       <tr>
+          <td>Darla Box</td>
+          <td>Moderator,Disabled</td>
+       </tr>
+       <tr>
+          <td>cawmpackaging@walmart.com(Rosemary)</td>
+          <td>Reviewer&Approver,Disabled</td>
+       </tr>
+       <tr>
+          <td>greg.vandenbrink@walmart.com</td>
+          <td>Reviewer,Disabled</td>
+       </tr>
+       <tr>
+         <td>buyer具体看情况</td>
+         <td>Reviewer&Approver,Daily Summary</td>
+       </tr>
+	</table>
+   <H3 style="color: red;">CAN发proofHQ任何时候都不用加客人，除非修改点比较多的时候；</H3>
+    <button class="btn btn-success yes">有Packagingform</button> 
+    <button class="btn no">无Packagingform</button> 
+<div style="border:1px solid #ccc;padding:40px;margin-top:20px;padding:30px;width:75%;">
+
+ Hi David, Rosemary,<br>
+<br>
+The following 17 files are for your approval:<br>
+<br>
+D03CASE_1707E401_Envelopes_WCA59224_BX_R<br>
+D03CASE_1707E402_Envelopes_WCA59121_BX_R<br>
+D03CASE_1707E403_Envelopes_WCA59124_BX_R<br>
+D03CASE_1707E404_WindowEnvelopes_WCA59126_BX_R<br>
+D03CASE_1707E405_Envelopes_WCA59214_BX_R<br>
+D03CASE_1707E406_Envelopes_WCA59111_BX_R<br>
+D03CASE_1707E407_Envelopes_WCA59114_BX_R<br>
+D03CASE_1707E408_Envelopes_WCA59116_BX_R<br>
+D03CASE_1707E409_InvitationEnvelopes_WCA59512_BX_R<br>
+D03CASE_1707E410_GreetingCardEnvelopes_WCA59514_BX_R<br>
+D03CASE_1707E411_CatalogEnvelopes_WCA59610_INS_R<br>
+D03CASE_1707E412_CatalogEnvelopes_WCA59614_INS_R<br>
+D03CASE_1707E413_CatalogEnvelopes_WCA59310_INS_R<br>
+D03CASE_1707E414_CatalogEnvelopes_WCA59311_INS_R<br>
+D03CASE_1707E415_CatalogEnvelopes_WCA59314_BX_R<br>
+D03CASE_1707E416_CatalogEnvelopes_WCA59411_INS_R<br>
+<p class="bb">D03CASE_1707E417_InvitationEnvelopes_WCA59511_BX_R</p>
+<p class="aa" style="font-size:18px;color:red;">Note: we will send you the packaging form via a separate email, please check. </p>
+Program: Casemate <br>
+Supplier: Quality Park Products<br> 
+Buyer: David Farmer (D03) <br>
+Artwork due date: 2017/07/27 <br>
+Shipdate: 2017/09/05 <br>
+Status: for approval<br>
+
+</div>
+</div>	
+<script >
+  $(function(){
+  	$('.yes').click(function(){
+  		var $c=$("<br/>")
+      $(this).addClass('btn-success').siblings().removeClass('btn-success')
+       $(".aa").show()
+       // $(".bb").append($c)
+
+  	})
+    $('.no').click(function(){
+      var $c=$("<br/>")
+      $(this).addClass('btn-success').siblings().removeClass('btn-success')
+       $(".aa").hide()
+       // $(".bb").append($c)
+
+    })
+  })
+</script>
+</body>
+</html>

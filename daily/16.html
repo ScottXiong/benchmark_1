@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html >
+  <head>
+     <meta charset="utf-8">
+     <title>flows</title>
+     <meta name="viewport" content="width=device-width,initial-scale=1.0,
+     maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+     <!-- <link rel="stylesheet" type="text/css" href="static/css/reset.css"> -->
+     <script src='http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js'></script>
+     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css">
+     <!-- <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css"> -->
+    <!--  <link rel="stylesheet" type="text/css" href="../css/index.css"> -->
+     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="../css/font.css">
+     <script type="text/javascript" src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script>
+     <style type="text/css">
+       img{border-bottom: 1px dotted #ccc;}
+       h3{font-family: "Arial";font-size: 20px;text-indent: 20px;color:purple;line-height: 30px;}
+       h3:hover{color: blue;text-indent: 20px;}
+       ul li {list-style: none;}
+       /*body{background: #ccc;}*/
+     </style>
+      <script >
+       var app=angular.module('test',[])
+       app.controller('con1',function($scope,$http){
+        $scope.arr=[
+           {name:"May Cheung",de:"D18",brand:"VAL",country:"USA",co:"Qtop"},
+           {name:"Wendy Milstead ",de:"D18",brand:"EA,VAL,Summer ",country:"USA",co:"Gemmy,Clever_Factory,UCP_International"},
+           {name:"Elizabeth Hernandez(新官上任) ",de:"D67",brand:"VAL,EA",country:"USA",co:"Mello_Smello,Brand_Castle,Long_King"},
+           {name:"Tanya Ellis",de:"D02",brand:"Equate ",country:"Canada",co:"Shummi"},
+           {name:"David Farmer",de:"D03",brand:"Casemate",country:"Canada",co:"Quality_Park,Milan"},
+           {name:"Harpreet Sandhu",de:"D07",brand:"PD",country:"Canada",co:"Qtop,Way_Dong"},
+           {name:"Teresa Parker",de:"D67",brand:"VAL,EA",country:"USA",co:"Clever_Factory"},
+           {name:"Jason Goldstein ",de:"D87",brand:"ONN,Black Web ",country:"Canada",co:"DS_Cable,Luxshare"},
+           {name:"Betty Cash",de:"D67",brand:"Way To Celebrate,St Patrick's Day,St.Patrick's Day  ",country:"USA",co:"GT_Plus,Rubies,Dan_Dee"},
+           {name:"Erin Chiyen ",de:"D22",brand:"Holiday Time ",country:"CAN",co:"Xin_Hai_Jin"},
+           {name:"Samantha Miller",de:"D44",brand:"Holiday Time",country:"USA",co:"Cole_Ashcroft"},
+           {name:"ng Lim",de:"D17",brand:"Holiday Time",country:"Canada",co:"Universal Candle"},
+           {name:"Nikesh Dusara",de:"D06",brand:"GV",country:"Canada",co:"GPO"}
+           // {name:"",de:"",brand:"",country:"",co:""},
+           // {name:"",de:"",brand:"",country:"",co:""},
+           // {name:"",de:"",brand:"",country:"",co:""},
+           // {name:"",de:"",brand:"",country:"",co:""}
+        ]
+         })
+     </script>
+ </head>
+ <body>
+  <div class="list-group">
+    <a href="javascript:window.history.go(-1)" class="list-group-item danger" style="font-weight: bold;">
+         <span class="glyphicon glyphicon-chevron-left back" style="color: blue;">返回</span><span style="margin-left: 34%" class="disabled">日常case总结</span>
+      </a>
+  </div>
+   <div ng-app='test' ng-controller='con1'>
+   <div class="media">
+  <a class="pull-left" href="#">
+    <img class="media-object" src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1296279343,366161894&fm=27&gp=0.jpg" style="border-radius:50%;width: 180px;height: 180px;">
+  </a>
+  <div class="media-body" style="padding: 15px;">
+    <h4 class="media-heading gradient">PDF／AI 上锁问题？</h4> <br>
+      2017-09-18 08:20
+    <!-- Nested media object -->
+    <div class="media">
+      <ul>
+        <li>1.如果是做NON-WMT包装的客人（如CAB，LNC，FKT等），我们可以提供不上锁的PDF或者不转曲的AI档案给客人;</li>
+        <li>2.如果是做WMT包装的客人，一般是不会给不上锁的PDF或者转曲的AI档案。但是有特殊情况，如果客人自己可以做档案，并且这家客人有大批的档案，通常他会给我们做少量的档案，然后根据我们做好的档案，自己再做其他的档案，这个时候我们可以给不上锁的PDF或者不转曲的AI档案（例如EVE）。
+    </div></li>
+      </ul>
+  </div>
+</div>
+ <div ng-app='test' ng-controller='con1' class="container">
+
+    <!-- <h3>buyer信息统计</h3>
+    <table class="table table-hover table-striped table-bordered text-center">
+      <thead>
+         <tr class="success">
+           <th class="text-center">Buyer</th>
+           <th class="text-center">Department</th>
+           <th class="text-center">Brand</th>
+           <th class="text-center">Country</th>
+           <th class="text-center">Partner</th>
+         </tr>
+         <tbody>
+           <tr ng-repeat="v in arr">
+              <td >{{v.name}}</td>
+              <td>{{v.de}}</td>
+              <td>{{v.brand}}</td>
+              <td>{{v.country}}</td>
+              <td>{{v.co}}</td>
+           </tr>
+         </tbody>
+      </thead>
+    </table>
+       <H3 style="color: firebrick;">以后加拿大的只要是有加Wendy Chan 的，将deadline改成3天 </H3>
+      <!--  <img src="../imgs/17.png" alt=""> -->
+       <!-- <a href="javascript:void(0)">ing.lim@walmart.com</a>无需确认  {{2.8*3}} --> 
+   </div>
+ </body>
+</html>

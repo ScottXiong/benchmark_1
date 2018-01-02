@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html >
+  <head>
+     <meta charset="utf-8">
+     <title>flows</title>
+     <meta name="viewport" content="width=device-width,initial-scale=1.0,
+     maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+     <!-- <link rel="stylesheet" type="text/css" href="static/css/reset.css"> -->
+     <script src='http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js'></script>
+     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css">
+     <link rel="stylesheet" type="text/css" href="../css/font.css">
+     <!-- <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css"> -->
+     <link rel="stylesheet" type="text/css" href="../css/index.css">
+     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <script type="text/javascript" src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script>
+     <script >
+       var app=angular.module('test',[])
+       app.controller('con1',function($scope,$http){
+         $scope.arr=[
+           {c:"客人不明白产品描述被改",tar:"1.html"},
+           {c:"发修改稿时你应该最先考虑的事",tar:"2.html"},
+           {c:"初稿",tar:"./files/draft.html"},
+           {c:"修改稿",tar:"./files/revise.html"},
+           {c:"客户确认",tar:"./files/sC.html"},
+           {c:"WMT确认",tar:"./files/wmt.html"},
+           {c:"送翻译",tar:"./files/translate.html"},
+           {c:"客户最终确认",tar:"./files/sFinalC.html"},
+           {c:"最终稿",tar:"./files/final.html"},
+           {c:"客供档案",tar:"./files/supplier.html"},
+           {c:"attentions",tar:"./files/attentions.html"},
+           {c:"packaging type",tar:"./files/tags.html"},
+           {c:"tags",tar:"./files/types.html"}
+         ]
+         $scope.nowpage=1;
+         $scope.pages=Math.ceil($scope.arr.length/9)
+         $scope.page=[]
+          for (var i = 1; i <= $scope.pages; i++) {
+            $scope.page.push(i)
+          }
+         $scope.show=function(n){
+           $scope.nowpage=n;
+         } 
+       })
+     </script>
+     <style type="text/css">
+       img{border-bottom: 1px dotted #ccc;}
+       h3{font-family: "Arial";font-size: 20px;margin-bottom: 20px;margin-left: 30px;}
+       span{color: red;}
+     </style>
+ </head>
+ <body>
+    <div class="list-group">
+    <a href="javascript:window.history.go(-1)" class="list-group-item danger" style="font-weight: bold;">
+         <span class="glyphicon glyphicon-chevron-left back" style="color: blue;">返回</span><span style="margin-left: 34%" class="disabled">LNC初稿</span>
+      </a>
+  </div>
+   <div ng-app='test' ng-controller='con1'>
+   <div class="media">
+  <a class="pull-left" href="#">
+    <img class="media-object" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507583011999&di=6ec98054ffb6742695873bbdf4bc184c&imgtype=0&src=http%3A%2F%2Fimg.lanrentuku.com%2Fimg%2Fallimg%2F1308%2F137769014148.jpg" style="border-radius:50%;width: 150px;height: 150px;">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading gradient">用PHQ给客人</h4> <br>
+      2017-10-07 17:28
+    <!-- Nested media object -->
+    <div class="media">
+     <table class="table table-hover table-bordered table-striped" style="width: 90%;">
+       <thead>
+         <tr class="success">
+           <th>add person</th>
+           <th>right</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>chris</td>
+           <td>Moderator,Disabled</td>
+         </tr>
+         <tr>
+           <td>Darla Box</td>
+           <td>Moderator,Disabled</td>
+         </tr>
+         <tr>
+           <td>ccorbisiero@lcibrands.com</td>
+           <td>Reviewer & Approval, Daily Summery</td>
+         </tr>
+       </tbody>
+     </table>
+     
+     <div style="padding: 20px;border: 1px solid #ccc;width: 80%;">
+     <h3 style="margin-left: 0;">Subject:LNC/TravelFLEXToiletryKit/B170943</h3>
+     <div>
+       Hi Cheire,<br>
+<br>
+The following file is for your approval:<br>
+<br>
+LNC_17094301_TravelFLEXToiletryKit_XXXXXX_HT<br>
+     </div>
+    </div>
+  </div>
+</div>
+ </body>
+</html>

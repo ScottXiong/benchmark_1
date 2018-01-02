@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html >
+  <head>
+     <meta charset="utf-8">
+     <title>业务部工作流程</title>
+     <meta name="viewport" content="width=device-width,initial-scale=1.0,
+     maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+     <link rel="stylesheet" type="text/css" href="static/css/reset.css">
+     <script src='http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js'></script>
+     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css">
+     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+     <script >
+       var app=angular.module('test',[])
+       app.filter('xw',function(){
+       return function(input,argus){
+        // console.log(argus)
+        // console.log(1)
+        var arr=input.split(argus);
+        if (!argus) {return input};
+        var b=arr.join("<span style='color:red;'>"+argus+"</span>").replace(/(&gt;)/gi,'>').replace(/&lt;/gi,"<")
+         console.log(typeof(b))
+        console.log("xw:",b)
+       return b
+       }
+        var c=$('.p').html()
+        var b=c.replace(/(&gt;)/gi,'>').replace(/&lt;/gi,"<")
+        c=$('p').html(b)
+       })
+
+      app.filter('wx',function(){
+       return function(input,argus){
+        // console.log(argus)
+        // console.log(1)
+        if (!argus) {return input};
+        var b=input.replace(/'"'/,'')
+         console.log(typeof(b))
+        console.log("wx:",b)
+       return b
+       }
+        var c=$('.p').html()
+        var b=c.replace(/(&gt;)/gi,'>').replace(/&lt;/gi,"<")
+        c=$('p').html(b)
+       })
+       app.controller('con1',function($scope,$http){
+         $scope.crr=["Please release the AI file to us for preparation first.  While you continue to push for an approval, we will also ask the GSO’s office help on their side","Hi Kinnie,Received and downloaded. For your following comments, we have updated the English instructions per the yellow note, attached screen shot is for your reference. So please check and change your decisions, thanks.","Hi Cherie,The files have been uploaded to PHQ to you just now, please check.","Hi Jessie,Please fill in attached packaging form and provide us the die line for 30462397 42CA M, since we haven’t received the information from your side previously.","I will finish attaching and reviewing files in the morning.","Hi Zoey,Please advise the vendor stock number for your animated items, then we will add “Try Me” accordingly.","Hi Christopher.  Can your team repost ALL the BeWell packaging to-date on PHQ again?  Sorry, can’t locate the email from recent past.  Thanks!","Pls find attached bank slip for your record.","We have uploaded the photos.  Please check at your end","Do you have a number where I can reach you?For the items as attached,please change the tracking number as below YZE 0817 BATCH-YZE001 YANGZHOU,CHINA And please repost the AI files to us.","Hi Paige,Please kindly noted that all of VAL animated items also need add the 'Try Me' on the artwork.","Do you have a number where I can reach you?","Here are the others we are having trouble figuring out...","Hi Wendy, Oneal,In a separate email, I will send some screenshots of die lines that we have questions on. We are unsure of the structure.Also, the items shown in the attached screenshot, we don’t have any die for these.","Hi Kinnie,We are still waiting CYMK hi-res photos for following, please provide to us, thanks.","Further to our last email, please add back the following instructions as per the laboratory’s advice.","NOTE: we have sent packaging form via a separate email, Please check.","Please also advise the name of the 2 people who approved.  We will communicate with GSO immediately.","We are waiting for your feedbacks for attached e-mail from Simon, please advise, thanks.","Hi Bob,The new packaging for 2-pk had been sent, the tracking number is UPS: 1Z2V54860450780825.","Noted with thanks. I've resent images to your team via QQ. Please check. Thanks.","ccorbisiero@lcibrands.com has made a decision of Approved with 0 comments.","Per Walmart’s notice, they will change artwork of current item 30462397 42CA M as well.  Please let us know when artwork will be released.  We prefer to receive all works and arrange payment together.","Thank you for your prompt reply.","Actually, we have some questions about the 3 diffuser artworks : 1.How many people are responsible for the approval of the artwork? Who are they? 2.Who has already approved the artworks? Who hasn’t?Time is tight, please provide the name of the person who has not approve the artworks, then we will ask help to Walmart GSO to push them.","The following files are approved by Walmart and our side, please proceed.","Please advise what the artwork status is, tks a lot.","The following 4 files are still pending final approval from Walmart Canada now, i have sent remind e-mails to them jus now, hope we can get approver as soon as possible.","Here is the quotation for your items, please check and sign back to us.If you have any questions, please let us know.","Sorry, pls see attached updated artwork if it's OK? Any question pls tell us, many thanks!","Please advise if Walmart approved the box and hangtag.","Per Walmart’s notice, they will change artwork of current item 30462397 42CA M as well.Please let us know when artwork will be released.  We prefer to receive all works and arrange payment together.","Noted with many thanks ","Could you please help to confirm that 'Try Me' need Spanish Version or not?","The “P” highlighted in attached screenshot should be lower case, please fix and re-send.","Please contact Shenzhen GS for the color card, BMK isn't responsible for the color proof.","This is xx from Benchmark Design. We have been asked by Walmart Canada to reach out to you for artwork design for following items under Canadiana program.","如果加拿大WMT发了kick off list给我们，需要我们主动联系客人的","'Exploded' is incorrect grammar. “Explode” is the correct word! ","Noted, so could you please send this sticker to us? We will add it into the file and let Walmart know about this, thanks.","Please see the photo as attached,the logo  'G' is on the feet.","Here is a link for you to download the revised artwork for the following items, please check and confirm.","Sorry, the below email is not for you, please ignore.","Hi Wendy,The files are under translation now, need approximately 1 day to finish translation.","The document you provided is more like an instruction manual, i don’t think there’s enough place to put these info onto the packaging. So you need us to create the instruction manual, right?","Hi BMK, what other skus for holiday time are still pending for artwork approval? Please advise urgent!","Hi Nazeema, Ing,Hope you have a nice day.Could you please help to check and approve below files, since the ship date is very tight, thank you.","Could you please forward your confirmed e-mail to us for records? Since we didn’t receive it.By the way, we will send the files to Walmart Canada for approval.","Any news on the following item of the note from the below email? We are taking this file under production process.","I have question, do we need to send the samples to you or to Walmart for approval?","Hi Wendy,For following files, we are still waiting approval from Ing and Nazeema, lease help to push for the approval, thanks.","The below e-mail I just sent is the draft artwork for PDQ. Here is the revised file for the following item, please check and confirm.","Please use correct e-mail subject when reply e-mail.","Yes, you need to send pre-production samples to us for color checking, please check and reply attached e-mail from our color management department, thanks.","Please disregard my previous emails, I sent by mistake, sorry for inconvenience.","Please find the attached for use on Play Day PDQs going forward. We will stick with Flexo (Pantone U Blue) and use the simplified logo.","For this info, we think there’s no need to translate to Spanish. Please advise if this is a special request form your test agency?Since we have the files from our other suppliers, such info doesn’t have Spanish.","Did you get below e-mail? Could you please help to advise?","The files are pending approval from Kristin now, once approved, we will send the files to Walmart for approval.","Please list the Vendor Stock numbers, and we will provide to you accordingly.","For the Valentine items, Can you list the original VSN# in the first column? Since we can't distinguish the items if only listed the updated VSN#.","Our client confused about the translation below, Can you help to clarify?","Please see below buyer's comment and advise.","Please keep us posted.","Ivy is off duty now, our FTP is software-base which means you have to access via FTP software.We also accept transfer the files through Wetransfer.com (our preference) or Dropbox.","Have you received the attached email with revised file from Simon, please check and confirm first, once you confirm, we will route to Walmart for approval.","NOTE: Walmart Canada Import Information (for Domestic items 'Imported for' for Direct Imports 'Imported by'), which will be used for your items?","Note: we will send you the packaging form via a separate email, please check.","Hi Lissy, Nicole, Koyuki, Kristin,The following 6 files with revisions are for your approval:","We will send the PDQ file to Walmart Canada for approval tonight, once approved, we can release final files to you.","Here are the files with translations for your final approval. Please double check the copy, dieline, codes etc.Once we got your approval, we will release the final files to you.","I have tried several times , but  download failed, can you send file by Email?","Please also check attached comments from Walmart Canada, could you please provide the correct approved artwork to us? Then we will revise the files accordingly.","Sorry, please note not to revise the artwork by your side, just advise the comments to us and we will update for you, thanks.","Rename the file.Also, attached the PDQ dielines.","Here is the revised file for following item, please check and confirm","The following 13 DRAFT ARTWORK FILES are for your first approval:","The following 2 files with revisions are for your approval:","Please click 'go to proof' to see the comments from our proofing team and make revisions accordingly. Once you finished, please send back the requested files to our team in this address:service@benchmarkdesign.org","Here is the link to download files with translations for your final approval. Please double check the copy, dieline, codes etc.","IMPORTANT: The above download link will be available for 7 days. We will delete the files from the server at that time. If you do not download the files within 7 days, please contact us and we will re-upload to the server. There will be a 1 hour service fee to do this.","The following 2 DRAFT ARTWORK FILES are for your approval:","客人让我们问WMT事情：Could you please check the issue with Walmart GS team directly?","CDL发最终稿的时候要抄送给好多人的，由于会退信，还要加foxmail","Access_Asia----> ACA","D67不需要加delan(离开)了，是他就改成raven；D67 wendy确认，就表示最终确认了","CDL --->Creative Design Ltd.","AIC --> All In The Cards","Here is the final file for following items, please confirm receipt of this email.","We have provided the files in 2 formats for you (Illustrator files, and PDF files). The artwork is exactly the same in each format, BUT they are for different purposes.","Illustrator format (AI files) --- these are for PRINTING ONLY - please send these to your PRINTER.PDF format --- these are for your visual REFERENCE ONLY. These files are locked, so that no changes can be made. Do not mass print from the PDFs!","If you are looking for WMT approved printers, please feel free to contact us for a printing quote.","If you have any questions, or problems with the files, please don't hesitate to let us know, we’ll be happy to help.","CLV--->Clever_Factory","NOTE: Please provide the pre-price and tracking code, thanks.","CLV4人组 nicole----->nicole.versaggi@cleverfactory.com","CLV4人组--->   Kristin Roach <kristin.roach@cleverfactory.com>","CLV4人组------->  Lissy Minasola <lissy.minasola@cleverfactory.com>","CLV4人组------>  Koyuki <koyuki@cleverfactory.com.hk>","CLV(riewer&decission)---->Barbara Gallutia <barbara.gallutia@cleverfactory.com>","Please see attached screen shot.They have been changed by buyner.","Please advise the date you will send both packaging forms and die lines for PlayDay Program. We must have a date on record for CWMT reporting and follow up.","Could you please provide the AI format of the below jpg file to us?","CLV------>    Hi Lissy, Nicole, Koyuki, Kristin,","NOTE: Usually, there's no dot after 'in' and 'cm' in dimension info, please advise if we can delete the dot, thanks.","Usually, we do not put Made in USA logo on PDQs according to style guide. Please advise where your direction came from? Could you please forward us the e-mail?","Received, please also provide is the die lines for your items, thanks.","Would you please share with a draft artwork for Play Day PDQ for reference?","canada 的情人节／复活节／万圣节的buyer------>May Cheung (D18)","Please provide the pre-price and the country of origin.","Walmart Canada Import Information (for Domestic items 'Imported for' for Direct Imports 'Imported by'), which will be used for your items? ","当客人的packagingform过来的时候，先检查又没有刀模，若没有，则要看是不是hangtag","做的时候skype中回复“－－ok”，表示自己在做，proofHQ只加一个人----proofing，权限Reviewer & Approver，Disabled;直接copy skype检查工作清单里面的主题,其他设置都一样","拿到新case要先检查资料是否完整:packagingForm 加刀模。如果缺少刀模，看packagingForm的packaging type是不是吊牌（吊牌可以不用刀模）；有没有PDQ，PDQ是必须提供刀模的。","客供档案 SUPPLIER CREATED ART，给我们做检查；（检查工作清单：客户改后档案见做稿，请检查）","根据packagingform做任务书，如果客户有要求，应该将客户的要求翻译在任务书里;Skype(设计部门清单)eg:U170753---新case，见做稿;","美国的PDQ上面是不准放Made in USA logo的，如果有任何客人要求放，我们都要拒绝。因为WMT商店的工作人员有时候会重复利用PDQ来放东西，一旦他们把本身没有Made in USA logo的产品装在了这些之前有Made in USA logo的PDQ里面，这会造成很大的麻烦。 ","Received with thanks!","Here are the files.","Any requirement about the whole packaging method. As this POs of 3 items mentioned above was shipped half an year ago, it is hard for us to prepare certain lables or carton boxes.","What is the total charges, or rough ranges, kindly advise.","Regarding to the sampls and relevant charges, would you please advise me several issues below:","Sorry to tell that we don't have Color target, we were told that you will need to contact with SZ GS, since they are responsible for it.","We have check the Easter PDQ die line you provided in below e-mail. The die line is same with the one you provided on 07/31/2017.","ALM---->Almar Sales Company","Sorry, we pasted wrong file names in below e-mail, but the files in the ProofHQ are correct. We will correct them in the next round, thanks.","onn blackweb casemate 要加color Tan , Duke Tan ","record:1.supplier去掉，所有人disabled，subject-->FILES FOR RECORDS/EA2018/Almar_Sales/U170637  2.The following 1 file is for your records: 3.NOTE:把该文件的修改点写在下面","ALM---> Jenny负责人","final file：如果已经给过最终稿，在给最终稿的时候要在客人修改的邮件上回复","non-wmt:请做一个非wmt的做稿，把邮件的附件存进做稿，单号B170808_LNC;任务单：请根据做稿的图片画刀模，只用画刀模先给客人确认，两种，宽度是：4inch, 高度是：无要求，那个孔是2.5mm","Please provide the address of your company in Chinese then we will send the color reference palette to you.","Well received, kindly help to send the color reference palette to us, thanks.","onn bw casemate 的color我们是有的，客人要的话可以给","NOTE: We have changed the height of the dieline from 48 inch to 44 inch according to the supplier's suggestion.","Could you send me unlock files for me? For all four valentine cards?","translation在给最终稿之前，要检查少不少翻译，少翻译会用S.或者SPA.标识","msi是与我们合作的一家公司（有时候我们会以他们公司的名义接一些印刷的业务）","Please check the item 'WM18KD16PUCD-A' in which you said 'Dog should read  3.1 in x 3.74 in ( 9.17cm x 9.5cm).' , but 3.1 inch does't match 9.17cm. Please advise.","casemate办公用品","blackweb onn 电子产品","LNC:lnc主要做旅行的，印刷负责人：：robert;设计负责人：Cherie；","cabelas:户外探险，有lever1，2，3；会有lewis－clark的logo;还有其他系列，具体看邮件的logo","translation：目前与我们合作的2家总部都是国外的，1.PLG，总部美国，联系人juanna+diego，boss is Eric,他们都是中国人。2.techlink：以下几个系列必须送techlink 》》》》canada：onn,bw,great value(GV),RV/HB(厨房用具)，FABY；usa:只有HW","cab:1.档案做了只是让我们做法语翻译，工单号-----------CAB；2.WMT的角色：底下的vendor会给我们发邮件，他们会附上刀模和packagingform,让我们做档案，然后给cab确认","lnc:ProofHQ邮件add，christ,darla box,+负责人，lnc比较复杂，不用写报表，cab要写报表","non-wmt:主要是lnc和cab，还有AIO美国做汽车配件的，BMT，WKL厨房用具，lnc旅行，cabelas：户外探险；path:design服务器／others","Hi Chris,This is Scott using Simon's computer.Could you please help to reply below e-mail?","For PA67206, it is mother item, no ned to design, thanks.","Sorry to tell you that we can't revise the die line according to WMT's  regulations, so you need to send correct die line to us, then we will update it for you.","We are waiting for Alexia for approval, only all of the person in WMT who are responsible for this job have approved,  we can proceed to the next step.","Sorry to tell you that we are not responsible for checking the PDQ sample, so you can contact with ShenZhen GS team for help","The following is for your reference:","Here is the link to download final files for following items, please confirm receipt.","Here are the updated files for following items, please confirm receipt of this email.","Here is the updated file for following item, please confirm receipt of this email.","凡PDQ让我们检查的都是与颜色有关的","carb lable放追踪信息的，方便超市员工看的","加拿大PD系列的PDQ上面的PD logo需要更新（印刷方式改成水印的）。所以，新PD logo确认之前，请不要发PDQ的最终稿给任何客人。其他包装的最终稿可以照常给，不影响。","Here is the link to download the UPDATED final files for your following items, please confirm receipt of this email. ","NOTE: The tree graphic should be provided in AI format, the PDF format will be damaged if we open via AI.","May the force be with you---<星球大战>著名台词.","We received the samples, and will arrange to shooting tomorrow. Thank you!","We have received the message and would you please provide the updated image to us?","Please see the image attached for Pull Back Animal and advise whether the translation needed to be revised.","Sorry, sending e-mail too fast, please ignore my below e-mail."]
+          $scope.argus=""
+          // $scope.arrs=[
+          //    {name:"PDQ",c:"red"},
+          //    {name:"GS",c:"#f60"},
+          //    {name:"by",c:"purple"},
+          //    {name:"separate",c:"#ccc"},
+          //    {name:"logo",c:"green"},
+          //    {name:"color",c:"pink"},
+          //    {name:"download",c:"#7d6d6d"},
+          //    {name:"receipt",c:"#984794"},
+          //    {name:"D67",c:"#253794"},
+          //    {name:"link",c:"#053254"},
+          //    {name:"dieline",c:"#135792"},
+          //    {name:"May",c:"#526487"},
+          //    {name:"CDL",c:"#358946"},
+          //    {name:"change",c:"#625847"},
+          //    {name:"route",c:"#185962"},
+          //    {name:"test",c:"#298962"},
+          //    {name:"below",c:"#546852"},
+          //    {name:"trans",c:"#444852"},
+          //    {name:"appro",c:"#f60"},
+          //    {name:"mistake",c:"red"},
+          //    {name:"sample",c:"#e96f38"},
+          //    {name:"tigh",c:"#852147"},
+          //    {name:"sticker",c:"#257456"},
+          //    {name:"proof",c:"#422147"},
+          //    {name:"pending",c:"#744147"},
+          //    {name:"status",c:"#532147"},
+          //    {name:"approved",c:"#242147"},
+          //    {name:"feedbacks",c:"#751147"},
+          //    {name:"per",c:"#161147"},
+          //    {name:"hi-res",c:"#872147"},
+          //    {name:"screenshot",c:"#365147"},
+          //    {name:"accordingly",c:"#921147"},
+          //    {name:"upload",c:"#351147"},
+          //    {name:"push",c:"#524147"},
+
+          // ]
+          $scope.hide=function () {
+              $scope.argus=""
+          }
+          $scope.show=true;
+          $scope.search=function(value){
+            $scope.show=false;
+            $scope.argus=value
+            // $('.aaa').html(Match.length)
+          }
+//           $(function(){
+//              var Match=$('.list-group-item').filter(":contains('" +($(this).val()) + "')")
+//            $('.aaa').html(Match.length)
+//           })
+//           $scope.now=[];
+//           if (!$scope.argus) {
+//               $('.aaa').html($scope.crr.length)
+//             $scope.now=$scope.crr;
+//           }else{
+//             $('.aaa').html(Match.length)
+//             $scope.crr.forEach(i=>{
+//            var b=i.split($scope.argus).join("<span style='color:red;'>"+argus+"</span>").replace(/(&gt;)/gi,'>').replace(/&lt;/gi,"<")
+//            $scope.push(b)
+//            return b
+//             })
+//           };
+//            $(function() {
+//       $('#inputPassword').keyup(function(){
+//         // $('.list-group-item').hide()
+//         //   .filter(":contains('" +($(this).val()) + "')").show();
+//           var Match=$('.list-group-item').filter(":contains('" +($(this).val()) + "')")
+//           // var brr=[]
+//           // for (var i = 0; i < Match.length; i++) {
+//           //   brr.push(Match[i].innerText)
+//           //   var txt= $('#inputPassword').val()
+//           //   var txt1=Match[i].innerHTML
+//           //   var fen=txt1.split(txt)
+//           //   txt1=fen.join('<span style="color:red;">'+txt+'</span>')
+//           //   brr.push(txt1)
+//           // };
+//           // $scope.crr=brr
+
+//       $('.aaa').html(Match.length)
+//       // }).keyup();//DOM加载完时，绑定事件完成之后立即触发
+// })
+//     });
+         })
+     </script>
+     <style type="text/css">  
+          /* ul li p::first-letter  
+            {  
+                font-size: 1.4em;  
+                font-weight: bold;  
+                color:#f60;    
+            }  */
+            .keyword{color: red;font-weight: bold }
+            ul li{list-style: none;}
+    </style>  
+
+     <style type="text/css">
+     body{font-family: "Arial"}
+     
+     /*.box{margin-left:20%;font-size: 20px;color:green; }
+     p{text-indent: 24px;color:black;}
+     p:hover{color:red;}
+     h3{color:blue;}    
+     h4{color: green;}
+     img{transform: scale(0.8);width: 75%;margin: 20px auto;}
+     table{font-family: "新宋体";font-weight: bold;}
+     tbody tr td{background: #fff;}*/
+     </style>
+
+ </head>
+ <body>
+   <div ng-app='test' ng-controller='con1' class="container">
+    <!-- <h4>大家可以把邮件中需要注意的问题或者经常要回复的内容收录下来，输入关键字就可以迅速找到你想要的结果！比如拿到CLV的单,你可以输入关键字 <span style="color:red;">CLV</span>即可知道相关的信息，然后把需要的相应的信息copy到邮件</h4>
+    <form class="form-horizontal" style="margin-top:40px;"> -->
+          <div class="form-group" style="margin-top:20px;">
+            <label for="inputPassword" class="col-sm-2 control-label" style="font-size:28px;">search:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputPassword" ng-model="argus"  placeholder="please type in keywords, such as by, PDQ ,tight ect.">
+                <div  style="position: absolute;top: 8px;left:620px;font-size:20px;" ng-click="hide()"></div>
+                <span style="color:red;">To keep accurate for the searcher, the upper or lower case for the letter can't be ignored.</span>
+            </div>
+          </div>
+   </form>
+   <div><span class="badge" ng-repeat="v in arrs" ng-style="{background:v.c}" ng-click="search(v.name)">{{v.name}}</span></div>
+  <span class="badge pull-right number">{{crr.length}}</span>
+  <li ng-show="show" style="font-size:16px;margin-top:5px;" class="text-right"><span class="aaa text-primary" style="color:red;font-size:20px;"></span></li>
+     <ul class="list-group" >
+      <li class="list-group-item" ng-repeat="(val,i) in crr" ng-show="i.indexOf(argus)!=-1" style="text-indent:28px;"><p class="p">&nbsp;&nbsp;{{i}}</p></li>
+    </ul>   
+   </div>
+   <script>
+
+   </script>
+ </body>
+</html>

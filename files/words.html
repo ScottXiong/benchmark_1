@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html >
+  <head>
+     <meta charset="utf-8">
+     <title>buyer</title>
+     <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,
+     maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"> -->
+     <!-- <link rel="stylesheet" type="text/css" href="static/css/reset.css"> -->
+     <script src='http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js'></script>
+     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css">
+     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+     <script >
+       var app=angular.module('test',[])
+       app.controller('con1',function($scope,$http) {
+           $scope.arr = [
+               {a: "for item", b: "tree graphic", c: "retouch", d: "color label dieline彩贴"},
+               {a: "provide sth to sb", b: "for reference", c: "distinguish", d: "approved with changes"},
+               {a: " consistent一致性", b: "more consistent比较级", c: "most consistent最高级", d: "modify to修改为"},
+               {a: "be pending approval from sb", b: "retrieve[rɪˈtri:v]取回", c: " kick off list/SKU ", d: "\n" +
+               "feedback反馈(n)"},
+               {a: "going forward(adv)", b: "whether", c: "retouch", d: "as根据"},
+               {a: "approve of one's ideal/plan", b: "the approver", c: "for your approval", d: "instruction指令"},
+               {a: "FT=inch", b: "4 FT PDQ", c: "for your approval", d: "instruction指令"},
+               {a:"pouches袋",b:"notifacation通知",c:"distribution分配",d:"inventory清单,总结"},
+               {a:"A share the same with B",b:" align with对齐",c:"garment服装",d:"hangers衣架"},
+               {a:"in terms of根据,就。。而言",b:"peg hole",c:"邮件问题用questions不用problem",d:"retouch photo"},
+               {a:"color lable",b:"head/back card",c:"fiber lable纤维",d:"fur皮毛"},
+               {a:"idential完全相同的，同卵双胞胎的",b:"display<=>PDQ",c:"approval with changes",d:"feather羽毛,长羽毛"},
+               {a:"in terms of根据,就。。而言",b:"peg hole",c:"邮件问题用questions不用problem",d:"retouch photo"},
+               {a:"application form申请书／表",b:"related相关的，有联系的",c:"slot狭槽",d:"plate盘子，盒子"},
+               {a:"styrofoam泡沫",b:"rdivider分割器",c:"",d:""}
+
+               
+           ]
+       })
+     </script>
+     <style type="text/css"> 
+     </style>  
+ </head>
+ <body>
+   <div ng-app='test' ng-controller='con1' class="container">
+    <h3>Words</h3>
+    <table class="table table-hover table-striped table-bordered text-center">
+      <thead>
+         <tr class="success">
+           <th class="text-center" colspan="4">regular words</th>
+
+         </tr>
+         <tbody>
+           <tr ng-repeat="v in arr">
+              <td >{{v.a}}</td>
+              <td >{{v.b}}</td>
+              <td >{{v.c}}</td>
+              <td >{{v.d}}</td>
+           </tr>
+         </tbody>
+      </thead>
+    </table>
+
+   </div>
+   <script>
+       var colors=["#f60","#258746","#e96f37","#247965","blue","green","purple","#589741","#263471","#882727","#4a3333"]
+       $(function(){
+           $("table tr td").hover(function () {
+               var num=Math.floor(Math.random()*colors.length)
+
+               $(this).css({"color":colors[num],"font-size":10+num+"px"})
+               console.log($(this).css('color'))
+           })
+       })
+   </script>
+ </body>
+</html>

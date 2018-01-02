@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../node_modules/amazeui/dist/css/amazeui.css">
+	<script type="text/javascript" src="../node_modules/amazeui/dist/js/amazeui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<style type="text/css">
+body{font-family: "Arial"}
+</style>
+<body>
+<div style="padding:15px;">
+<div>
+	<button class="btn btn-success">第一次发最终稿</button> <button class="btn b2">第二次发最终稿</button>
+</div>
+ <h3 style="color: red;">Subject: Release final artwork for WMT USA....</h3>
+Hi David,<br>
+<br>
+Here is the link to download <span class="bbb"></span>final files for following items, please confirm receipt.<br>
+<br>
+<p>Link:<a href="javascript:void(0)"> http://www.benchmarkdesign.org/outgoing/C170656_HMK_0722.zip</a> </p>
+<br>
+D04GV_17065601_MixedPlasticCutlery153ct_628915014006_BX_R<br>
+D04GV_17065602_MixedPlasticCutlery48ct_628915364668_BX_R<br>
+D04GV_17065603_ComboCutleryPack360ct_628915082005_BX_R<br>
+D04GV_17065604_CutleryCombowithCaddyTray152ct_628915013986_BB_R<br>
+D04GV_17065605_PlasticForks48ct_628915364637_BX_R<br>
+D04GV_17065606_PlasticSpoons48ct_628915364651_BX_R<br>
+D04GV_17065607_PlasticKnives48ct_628915364644_BX_R<br>
+<br>
+We have provided the files in 2 formats for you (Illustrator files, and PDF files). The artwork is exactly the same in each format, BUT they are for different purposes.<br>
+ <br>
+Illustrator format (AI files) --- these are for PRINTING ONLY - please send these to your PRINTER.<br>
+PDF format --- these are for your visual REFERENCE ONLY. These files are locked, so that no changes can be made. Do not mass print from the PDFs!<br>
+<br>
+If you are looking for WMT approved printers, please feel free to contact us for a printing quote.<br>
+ <br>
+If you have any questions, or problems with the files, please don't hesitate to let us know, we’ll be happy to help.<br>
+<br>
+<p style="color:red;">IMPORTANT: The above download link will be available for 7 days. We will delete the files from the server at that time. If you do not download the files within 7 days, please contact us and we will re-upload to the server. There will be a 1 hour service fee to do this.</p>
+
+Thanks & Best Regards 	<br>	
+ <br>
+Linda Tang<br>
+========================<br>
+BMK//AHI International, Ltd.<br>
+Tel: +86  0769-8176-0350 / 8507-7650 / 8176-0348<br>
+Fax: +86  0769-8176-0349<br>
+</div>	
+<script>
+	$(function(){
+		$('button').on('click',function(){
+			$(this).addClass('btn-success').siblings().removeClass('btn-success')
+			var num=$('button').index(this)
+			if (num==1) {
+                $('.bbb').html("the updated ")
+			}else{
+				$('.bbb').html("")
+			}
+		})
+	})
+</script>
+</body>
+</html>

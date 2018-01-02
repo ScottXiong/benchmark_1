@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html >
+  <head>
+     <meta charset="utf-8">
+     <title>flows</title>
+     <meta name="viewport" content="width=device-width,initial-scale=1.0,
+     maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+     <!-- <link rel="stylesheet" type="text/css" href="static/css/reset.css"> -->
+     <script src='http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js'></script>
+     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css">
+     <!-- <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css"> -->
+    <!--  <link rel="stylesheet" type="text/css" href="../css/index.css"> -->
+     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="../css/font.css">
+     <script type="text/javascript" src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script>
+
+     <script >
+       var app=angular.module('test',[])
+       app.controller('con1',function($scope,$http){
+         $scope.arr=[
+           {c:"客人不明白产品描述被改",tar:"1.html"},
+           {c:"发修改稿时你应该最先考虑的事",tar:"2.html"},
+           {c:"初稿",tar:"./files/draft.html"},
+           {c:"修改稿",tar:"./files/revise.html"},
+           {c:"客户确认",tar:"./files/sC.html"},
+           {c:"WMT确认",tar:"./files/wmt.html"},
+           {c:"送翻译",tar:"./files/translate.html"},
+           {c:"客户最终确认",tar:"./files/sFinalC.html"},
+           {c:"最终稿",tar:"./files/final.html"},
+           {c:"客供档案",tar:"./files/supplier.html"},
+           {c:"attentions",tar:"./files/attentions.html"},
+           {c:"packaging type",tar:"./files/tags.html"},
+           {c:"tags",tar:"./files/types.html"}
+         ]
+         $scope.nowpage=1;
+         $scope.pages=Math.ceil($scope.arr.length/9)
+         $scope.page=[]
+          for (var i = 1; i <= $scope.pages; i++) {
+            $scope.page.push(i)
+          }
+         $scope.show=function(n){
+           $scope.nowpage=n;
+         } 
+       })
+     </script>
+     <style type="text/css">
+       img{border-bottom: 1px dotted #ccc;}
+       h3{font-family: "Arial";font-size: 20px;text-indent: 20px;color:purple;line-height: 30px;}
+       h3:hover{color: blue;text-indent: 20px;}
+       ul li {list-style: none;}
+       /*body{background: #ccc;}*/
+     </style>
+ </head>
+ <body>
+  <div class="list-group">
+    <a href="javascript:window.history.go(-1)" class="list-group-item danger" style="font-weight: bold;">
+         <span class="glyphicon glyphicon-chevron-left back" style="color: blue;">返回</span><span style="margin-left: 34%" class="disabled">日常case总结</span>
+      </a>
+  </div>
+   <div ng-app='test' ng-controller='con1'>
+   <div class="media">
+  <a class="pull-left" href="#">
+    <img src="../imgs/77.png" style="border-radius:50%;width: 180px;height: 180px;"> 
+  </a>
+  <div class="media-body" style="padding: 15px;">
+    <h4 class="media-heading gradient">上晚班注意事项<span> (Tina，Lucy)</span>：</h4> <br>
+      2017-08-04 08:15
+    <!-- Nested media object -->
+    <div class="media">
+      <h3>晚班时间：22:00pm到06:30am</h3>
+       <ul>
+        <li>1, 任何回给加拿大WMT的人，请用paige邮箱上面的cwmt这个邮箱发送 </li>
+        <li>2, 任何邮件一定要注意自己检查一次再发送</li>
+        <li>3, 如果chris在线，你有问题不懂，请先问下他</li>
+        <li>4, 如果有不确定且不知道怎么处理的，<span>要回复客人会尽快处理</span> 并在交接本上面写清楚，哪个人，几点钟的邮件</li>
+        <li>5, 关于客人的邮件，请多看看linda晚上都是怎么处理的</li>
+        <li>6, 不要盲目的发邮件出去，一定要自己搞清楚客人的要求</li>
+        <li>7, 下班时，请记得关所有人的电脑和打印机</li>
+       </ul>
+    </div>
+  </div>
+</div>
+ </body>
+</html>

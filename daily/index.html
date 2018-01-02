@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html >
+  <head>
+     <meta charset="utf-8">
+     <title>flows</title>
+     <meta name="viewport" content="width=device-width,initial-scale=1.0,
+     maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+     <!-- <link rel="stylesheet" type="text/css" href="static/css/reset.css"> -->
+     <script src='http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js'></script>
+     <link rel="stylesheet" type="text/css" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css">
+     <!-- <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css"> -->
+     <link rel="stylesheet" type="text/css" href="../css/index.css">
+     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <script type="text/javascript" src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script>
+     <style type="text/css">
+       body{font-family: "Arial"}
+     </style>
+     <script >
+       var app=angular.module('test',[])
+       app.controller('con1',function($scope,$http){
+         $scope.arr=[
+           {c:"客人不明白产品描述被改",tar:"1.html"},
+          {c:"发修改稿时你应该最先考虑的事",tar:"2.html"},
+           {c:"一个season 新系列出来时",tar:"3.html"},
+           {c:"GS",tar:"4.html"},
+           {c:"客人要ftp上传comments",tar:"5.html"},
+           {c:"不用写报表进度清单的",tar:"6.html"},
+           {c:"客供档案最终稿怎么发？",tar:"7.html"},
+           {c:"压缩包太大时，怎么发？",tar:"8.html"},
+           // {c:"什么时候需要加color Duke？",tar:"9.html"},
+           {c:"给WMT记录",tar:"10.html"},
+           {c:"TL送翻译",tar:"11.html"},
+           {c:"晚班注意事项",tar:"12.html"},
+           // {c:"常见修改点",tar:"13.html"},
+           {c:"[benchmark]",tar:"14.html"},
+           // {c:"completed",tar:"15.html"},
+           {c:"PDF／AI上锁问题",tar:"16.html"},
+           // {c:"客供档案搜不到怎么办？",tar:"17.html"},
+           // {c:"LNC问题",tar:"18.html"},
+           // {c:"客供档案WMT确认环节应该注意哪些问题",tar:"19.html"},
+           // {c:"如何把修改点share给客人？",tar:"20.html"},
+           // // {c:"客人少档案",tar:"21.html"},
+           // {c:"关于WMT的brain",tar:"22.html"},
+           {c:"送翻译",tar:"23.html"}
+           // {c:"WMT buyer日常统计",tar:"15.html"},
+         ]
+         $scope.nowpage=1;
+         $scope.pages=Math.ceil($scope.arr.length/9)
+         $scope.page=[]
+          for (var i = 1; i <= $scope.pages; i++) {
+            $scope.page.push(i)
+          }
+         $scope.show=function(n){
+           $scope.nowpage=n;
+         } 
+       })
+     </script>
+ </head>
+ <body>
+   <div ng-app='test' ng-controller='con1'>
+      <!-- 最外层start -->
+      <div class="list-group" >
+      <a href="#" class="list-group-item disabled danger" style="font-weight: bold;"><span class="glyphicon glyphicon-pencil"></span><span class="badge">总共{{arr.length}}条信息</span>
+        日常case总结 <span class="pull-right">当前页码:{{nowpage}}</span>
+      </a>
+      <a href={{i.tar}} class="list-group-item" ng-repeat="(v,i) in arr.slice((nowpage-1)*10,nowpage*10)" style="text-indent:50px;">{{v+1+(nowpage-1)*10}}.&nbsp;&nbsp;{{i.c}}</a>
+      </div>
+      <nav aria-label="Page navigation" style=";position: absolute;left: 300px;top: 500px;">
+        <ul class="pagination center-block text-center">
+          <li>
+            <a href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="aaa"><a href="#" ng-repeat="n in page" ng-class="{active:true}" ng-click="show(n)">{{n}}</a></li>
+
+          <li>
+            <a href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+     </nav>
+
+      <!-- 最外层end -->
+   </div>
+
+ </body>
+</html>

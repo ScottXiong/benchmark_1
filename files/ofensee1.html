@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html >
+  <head>
+     <meta charset="utf-8">
+     <title>业务部工作流程</title>
+     <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,
+     maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"> -->
+     <!-- <link rel="stylesheet" type="text/css" href="static/css/reset.css"> -->
+     <script src='http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js'></script>
+     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css">
+     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+     <script >
+       var app=angular.module('test',[])
+       app.controller('con1',function($scope,$http){
+         $scope.crr=["Please keep us posted.","NOTE: Walmart Canada Import Information (for Domestic items 'Imported for' for Direct Imports 'Imported by'), which will be used for your items?","Note: we will send you the packaging form via a separate email, please check.","Hi Lissy, Nicole, Koyuki, Kristin,The following 6 files with revisions are for your approval:","We will send the PDQ file to Walmart Canada for approval tonight, once approved, we can release final files to you.","Here are the files with translations for your final approval. Please double check the copy, dieline, codes etc.Once we got your approval, we will release the final files to you.","I have tried several times , but  download failed, can you send file by Email?","Please also check attached comments from Walmart Canada, could you please provide the correct approved artwork to us? Then we will revise the files accordingly.","Sorry, please note not to revise the artwork by your side, just advise the comments to us and we will update for you, thanks.","Rename the file.Also, attached the PDQ dielines.","Here is the revised file for following item, please check and confirm","The following 13 DRAFT ARTWORK FILES are for your first approval:","The following 2 files with revisions are for your approval:","Please click 'go to proof' to see the comments from our proofing team and make revisions accordingly. Once you finished, please send back the requested files to our team in this address:service@benchmarkdesign.org","Here is the link to download files with translations for your final approval. Please double check the copy, dieline, codes etc.","IMPORTANT: The above download link will be available for 7 days. We will delete the files from the server at that time. If you do not download the files within 7 days, please contact us and we will re-upload to the server. There will be a 1 hour service fee to do this.","The following 2 DRAFT ARTWORK FILES are for your approval:","客人让我们问WMT事情：Could you please check the issue with Walmart GS team directly?","CDL发最终稿的时候要抄送给好多人的，由于会退信，还要加foxmail","Access_Asia----> ACA","D67不需要加delan了；D67 wendy确认，就表示最终确认了","CDL --->Creative Design Ltd.","AIC --> All In The Cards","Here is the final file for following items, please confirm receipt of this email.","We have provided the files in 2 formats for you (Illustrator files, and PDF files). The artwork is exactly the same in each format, BUT they are for different purposes.","Illustrator format (AI files) --- these are for PRINTING ONLY - please send these to your PRINTER.PDF format --- these are for your visual REFERENCE ONLY. These files are locked, so that no changes can be made. Do not mass print from the PDFs!","If you are looking for WMT approved printers, please feel free to contact us for a printing quote.","If you have any questions, or problems with the files, please don't hesitate to let us know, we’ll be happy to help.","CLV--->Clever_Factory","NOTE: Please provide the pre-price and tracking code, thanks.","CLV4人组 nicole----->nicole.versaggi@cleverfactory.com","CLV4人组--->   Kristin Roach <kristin.roach@cleverfactory.com>","CLV4人组------->  Lissy Minasola <lissy.minasola@cleverfactory.com>","CLV4人组------>  Koyuki <koyuki@cleverfactory.com.hk>","CLV(riewer&decission)---->Barbara Gallutia <barbara.gallutia@cleverfactory.com>","Please see attached screen shot.They have been changed by buyner.","Please advise the date you will send both packaging forms and die lines for PlayDay Program. We must have a date on record for CWMT reporting and follow up.","Could you please provide the AI format of the below jpg file to us?","CLV------>    Hi Lissy, Nicole, Koyuki, Kristin,","NOTE: Usually, there's no dot after 'in' and 'cm' in dimension info, please advise if we can delete the dot, thanks.","Usually, we do not put Made in USA logo on PDQs according to style guide. Please advise where your direction came from? Could you please forward us the e-mail?","Received, please also provide is the die lines for your items, thanks.","Would you please share with a draft artwork for Play Day PDQ for reference?","canada 的情人节／复活节／万圣节的buyer------>May Cheung (D18)","Please provide the pre-price and the country of origin.","Walmart Canada Import Information (for Domestic items 'Imported for' for Direct Imports 'Imported by'), which will be used for your items? ","当客人的packagingform过来的时候，先检查又没有刀模，若没有，则要看是不是hangtag","做的时候skype中回复“－－ok”，表示自己在做，proofHQ只加一个人----proofing，权限Reviewer & Approver，Disabled;直接copy skype检查工作清单里面的主题,其他设置都一样","拿到新case要先检查资料是否完整:packagingForm 加刀模。如果缺少刀模，看packagingForm的packaging type是不是吊牌（吊牌可以不用刀模）；有没有PDQ，PDQ是必须提供刀模的。","客供档案 SUPPLIER CREATED ART，给我们做检查；（检查工作清单：客户改后档案见做稿，请检查）","根据packagingform做任务书，如果客户有要求，应该将客户的要求翻译在任务书里;Skype(设计部门清单)eg:U170753---新case，见做稿;","美国的PDQ上面是不准放Made in USA logo的，如果有任何客人要求放，我们都要拒绝。因为WMT商店的工作人员有时候会重复利用PDQ来放东西，一旦他们把本身没有Made in USA logo的产品装在了这些之前有Made in USA logo的PDQ里面，这会造成很大的麻烦。 ","Received with thanks!","Here are the files.","Any requirement about the whole packaging method. As this POs of 3 items mentioned above was shipped half an year ago, it is hard for us to prepare certain lables or carton boxes.","What is the total charges, or rough ranges, kindly advise.","Regarding to the sampls and relevant charges, would you please advise me several issues below:","Sorry to tell that we don't have Color target, we were told that you will need to contact with SZ GS, since they are responsible for it.","We have check the Easter PDQ die line you provided in below e-mail. The die line is same with the one you provided on 07/31/2017.","ALM---->Almar Sales Company","Sorry, we pasted wrong file names in below e-mail, but the files in the ProofHQ are correct. We will correct them in the next round, thanks.","onn blackweb casemate 要加color Tan , Duke Tan ","record:1.subject-->FILES FOR RECORDS/EA2018/Almar_Sales/U170637  2.The following 1 file is for your records: 3.NOTE:把该文件的修改点写在下面","ALM---> Jenny负责人","final file：如果已经给过最终稿，在给最终稿的时候要在客人修改的邮件上回复","non-wmt:请做一个非wmt的做稿，把邮件的附件存进做稿，单号B170808_LNC;任务单：请根据做稿的图片画刀模，只用画刀模先给客人确认，两种，宽度是：4inch, 高度是：无要求，那个孔是2.5mm","Please provide the address of your company in Chinese then we will send the color reference palette to you.","Well received, kindly help to send the color reference palette to us, thanks.","onn bw casemate 的color我们是有的","NOTE: We have changed the height of the dieline from 48 inch to 44 inch according to the supplier's suggestion."]
+         
+         })
+     </script>
+     <style type="text/css">  
+           /* ul li p::first-letter  
+            {  
+                font-size: 1.4em;  
+                font-weight: bold;  
+                color:#f60;    
+            }  
+            .keyword{color: red;font-weight: bold } */
+            ul li p{font-size:12px;}
+    </style>  
+
+     <style type="text/css">
+     body{font-family: "Arial"}
+     
+     /*.box{margin-left:20%;font-size: 20px;color:green; }
+     p{text-indent: 24px;color:black;}
+     p:hover{color:red;}
+     h3{color:blue;}    
+     h4{color: green;}
+     img{transform: scale(0.8);width: 75%;margin: 20px auto;}
+     table{font-family: "新宋体";font-weight: bold;}
+     tbody tr td{background: #fff;}*/
+     </style>
+
+ </head>
+ <body>
+   <div ng-app='test' ng-controller='con1' class="container">
+    <form class="form-horizontal" style="margin-top:40px;">
+          <div class="form-group">
+           
+            <div class="col-md-11">
+              <input type="text" class="form-control" id="inputPassword" ng-model="aa" placeholder="search请输入关键单词，如 for by .ect">
+            </div>
+          </div>
+   </form>
+     <ul class="list-group" > 
+      <li class="list-group-item" ng-repeat="(val,i) in crr" style="text-indent:28px;"  ng-show="i.indexOf(aa)>-1" ng-if="aa!=''"><p>&nbsp;&nbsp;{{i}}</p></li>
+    </ul>   
+   </div>
+   <script type="text/javascript">
+     // var  val=$("#inputPassword").val()
+     // var px=$('.list-group-item').find('p').filter(":contains('" +($(this).val()) + "')").length
+     // for (var i = 0; i < px.length; i++) {
+     //    console.log(i)
+     // }
+   </script>
+ </body>
+</html>

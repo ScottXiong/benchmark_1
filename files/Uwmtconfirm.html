@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html >
+  <head>
+     <meta charset="utf-8">
+     <title>业务部工作流程</title>
+     <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,
+     maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"> -->
+     <!-- <link rel="stylesheet" type="text/css" href="static/css/reset.css"> -->
+     <script src='http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js'></script>
+     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css">
+     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <style type="text/css">
+     
+     .box{margin-left:20%;font-size: 20px;color:green; }
+     p{text-indent: 24px;color:black;}
+     p:hover{color:red;}
+     h3{color:blue;}    
+     h4{color: green;}
+     img{transform: scale(0.8);width: 75%;margin: 20px auto;}
+     table{font-family: "新宋体";font-weight: bold;}
+     tbody tr td{background: #fff;}
+     tbody tr:hover{background: #69c}
+     span{color:red;}
+     </style>
+ </head>
+ <body>
+ <div class="list-group">
+    <a href="javascript:window.history.go(-1)" class="list-group-item danger" style="font-weight: bold;">
+         <span class="glyphicon glyphicon-chevron-left back" style="color: blue;">返回</span><span style="margin-left: 34%" class="disabled">UWMT Confirmed</span>
+      </a>
+  </div>
+   <div class="container">
+     <div id="version">
+         <h3>New Version</h3>
+         <p>修改方法在原来的基础上new version即可,详细细节如下：</p>
+         <h4>1.upload new pdf</h4>
+         <h4>2.将supplier的权限改为 <span>reviewer，decision</span>(客人一直都是daily summary or decision)</h4>
+         <h4>3.根据任务单对应的buyer add buyer </h4>
+         <h4>4.Add Email</h4>
+         <table class="table table-hover table-striped table-bordered text-center">
+           <thead>
+             <tr class="danger">
+               <th style="text-align: center;">If</th>
+               <th style="text-align: center;">Add</th>
+               <th style="text-align: center;">Right</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <td>teresa.parker@wal-mart.com  </td>
+               <td style="text-decoration: line-through;">Raven.Swanson@walmart.com </td>
+               <td>Reviewer & Approver, Daily summary</td>
+             </tr>
+              <tr>
+               <td>Wendy.Milstead@walmart.com</td>
+               <td>Brian.hopkins@walmart.com </td>
+               <td>Reviewer & Approver, Daily summary</td>
+             </tr>
+              <tr>
+               <td>Betty.Cash@walmart.com  </td>
+               <td> <span>Raven.Swanson@walmart.com</span></td>
+               <td>Reviewer & Approver, Daily summary</td>
+             </tr>
+              <tr>
+               <td>Shannon.campbell@walmart.com</td>
+               <td></td>
+               <td>Reviewer & Approver, Daily summary</td>
+             </tr>
+             <tr>
+               <td>dylan-->Yes, so change to <span>raven</span></td>
+               <td><span>elizabeth.hernandez@samsclub.com</span></td>
+               <td>Reviewer & Approver, Daily summary</td>
+             </tr>
+             <tr>
+               <td rowspan="2">
+                    <h3><br>D67</h3>
+               <br>
+              
+               </td>
+               <td> Flora.jin@walmart.com <br>
+               Kinki.Yu0@walmart.com <br>
+               Shally.Yan@walmart.com <br></td>
+               <td><br><span>Reviewer&Disabled</span></td>
+             </tr>
+             <!-- <tr style="text-decoration: line-through;">
+               <td>Raven.Swanson@walmart.com </td>
+               <td style="margin-top: 20px;">Reviewer & Approver, Daily summary</td>
+             </tr> -->
+             <tr>
+               <td colspan="3"><span>Teresa和Raven负责不同的项目(二者不可共存)，任何D67的有Teresa的一定要去掉raven，没有Teresa的要加上Raven</span></td>
+             </tr>
+           </tbody>
+         </table>
+         <h4>5.message格式</h4>
+         <div style="width: 450px;height: 270px;padding: 10px;border: 1px solid #ccc;">
+           Hi Wendy, Brian,<br>
+<br>
+The following <span style="color:red;">2 files </span> are for your <span style="color:red;">approval</span>:<br>
+<br>
+D18SUM_17078101_Bucket_VS17827E_HT_R<br>
+D18SUM_17078102_Bucket_VS18201E_HT_R<br>
+<br>
+Program: Summer<br> 
+Supplier: Test Rite Int'l Co., Ltd <br>
+Buyer: Wendy Milstead (D18) <br>
+Artwork due date: 07/21/2017 <br>
+Status: for approval<br>
+         </div>
+         <!-- <h4>6.skype(报表进度清单)</h4>
+         <div style="padding: 15px;">          
+WMT USA / SUM / TST / U170781---给WMT确认<br> -->
+         </div>
+       </div>
+   </div>
+ </body>
+</html>

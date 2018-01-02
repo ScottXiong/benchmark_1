@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html >
+  <head>
+     <meta charset="utf-8">
+     <title>flows</title>
+     <meta name="viewport" content="width=device-width,initial-scale=1.0,
+     maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+     <!-- <link rel="stylesheet" type="text/css" href="static/css/reset.css"> -->
+     <script src='http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js'></script>
+     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css">
+     <link rel="stylesheet" type="text/css" href="../css/font.css">
+     <!-- <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css"> -->
+    <!--  <link rel="stylesheet" type="text/css" href="../css/index.css"> -->
+     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <script type="text/javascript" src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script>
+     <script >
+       var app=angular.module('test',[])
+       app.controller('con1',function($scope,$http){
+         $scope.arr=[
+           {c:"客人不明白产品描述被改",tar:"1.html"},
+           {c:"发修改稿时你应该最先考虑的事",tar:"2.html"},
+           {c:"初稿",tar:"./files/draft.html"},
+           {c:"修改稿",tar:"./files/revise.html"},
+           {c:"客户确认",tar:"./files/sC.html"},
+           {c:"WMT确认",tar:"./files/wmt.html"},
+           {c:"送翻译",tar:"./files/translate.html"},
+           {c:"客户最终确认",tar:"./files/sFinalC.html"},
+           {c:"最终稿",tar:"./files/final.html"},
+           {c:"客供档案",tar:"./files/supplier.html"},
+           {c:"attentions",tar:"./files/attentions.html"},
+           {c:"packaging type",tar:"./files/tags.html"},
+           {c:"tags",tar:"./files/types.html"}
+         ]
+         $scope.nowpage=1;
+         $scope.pages=Math.ceil($scope.arr.length/9)
+         $scope.page=[]
+          for (var i = 1; i <= $scope.pages; i++) {
+            $scope.page.push(i)
+          }
+         $scope.show=function(n){
+           $scope.nowpage=n;
+         } 
+       })
+     </script>
+     <style type="text/css">
+       body{font-family: "Arial";font-size: 12px;}
+       .yellow{background: yellow;}
+       .message{padding: 15px;margin-top: 10px;}
+     </style>
+ </head>
+ <body>
+    <div class="list-group">
+    <a href="javascript:window.history.go(-1)" class="list-group-item danger" style="font-weight: bold;">
+         <span class="glyphicon glyphicon-chevron-left back" style="color: blue;">返回</span><span style="margin-left: 34%" class="disabled">BW & ONN Packaging Form 模版</span>
+      </a>
+   </div>
+    <div class="message">
+      <h4 style="margin-top: 10px;color:red;">subject:Packaging form for WMT CAN / ONN / CHARG-C / Luxshare</h4> <hr>
+      Dear supplier,
+<p>This is Simon from Benchmark Design. We have been asked by Walmart Canada to reach out to you for artwork design for following items under Blackweb program. </p>
+
+<p>Attached is a packaging form for Walmart Canada, we use it to collect the information we need from you in order to design your packaging. Please return the completed packaging form(s) by <span class="yellow">xx/xx/xxxx</span>.</p> <img src="../imgs/52.png"> <br>
+
+<p>In case you are unfamiliar with it, here is what you should do next:</p>
+
+<p>* Please fill in the data on the packaging form as completely as possible, as we are required to present this form to Walmart Canada when submitting your files for approval.</p>
+
+<p>* Be sure to include the category your items belong to, the department, the dates for in-store, art due, pack-out, and shipping (we can't get the artwork approved without these dates!). Also provide the buyer's name and email address. as we will need this when submitting for their approval. </p>
+
+<p>* Send the packaging forms and your die line files to us as soon as possible. Note that the packaging process can take from 10 to 22 days depending on the number of files, complexity, etc. The dieline files must be in illustrator format with dimensions clearly marked, and 1:1 size (actual size).</p>
+
+<p>* For PDQ trays, sidekicks, pallets, Walmart Canada requires a rendering or 3D image to understand the structure. Please prepare and send to us along with your files.</p>
+<p>* Please make sure your die lines are properly named - use the SKU number or UPC number, and be sure the number appears on the Packaging Form as well.</p>
+
+<ol>
+  <li>Please complete packaging intake forms, and any additional information and send back to us.</li>
+  <li>BMK sends completed vendor intake form to WMT; BMK prepares and sends quotation to vendors</li>
+  <li>WMT responds back to BMK with any comments or revisions on the completed packaging intake form (3 days); vendor sign cost estimate (2 days)</li>
+  <li>BMK begins artwork adaptation (10 days)</li>
+  <li>BMK sends 1st proof to WMT and the vendor for approval; BMK gets any feedback (changes required or approved) on 1st proof (2 days)</li>
+  <li>Approved text from 1st proof is sent for French translation (2-3 days); Photography is completed if applicable (2 days)</li>
+  <li>2nd proof (translation/photography finished) is sent to WMT & vendor at the same time, for approval (2 days), once approved...</li>
+  <li>BMK prepares final file(s) and release to vendor (1-2 days)</li>
+  <li>Vendors are required to send a print samples for colour quality checking (5 days)</li>
+</ol>
+
+
+<strong>Special notes:</strong>
+<br><br>
+**Warnings on packaging<br>
+<br>
+<p>If warnings are required on your packaging, please note that Walmart Canada requires you to provide approved warnings to us (actual wording, size and placement requirements).</p>
+<p>Canada requires all packaging to be bilingual - but when we send the draft artwork to you, French will not yet be added. We will use placeholder text to represent the French. It will start with an 'FRE' or just an 'F' - this will be replaced with French *after* both you and the Walmart buyer have approved the artwork.</p>
+
+<p>If you have any questions, please feel free to contact us. The team here at Benchmark looking forward to working with you.</p>
+
+Thanks & Best Regards <br>
+ <br>
+Simon Chen<br>
+========================<br>
+BMK//AHI International, Ltd.<br>
+Tel: +86  0769-8176-0350 / 8507-7650 / 8176-0348<br>
+Fax: +86  0769-8176-0349 <br>
+<img src="../imgs/53.png">
+    </div>
+ </body>
+</html>

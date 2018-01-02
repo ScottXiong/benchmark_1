@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>case</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../node_modules/angular/angular.js"></script>
+	<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../node_modules/amazeui/dist/css/amazeui.css">
+	<script type="text/javascript" src="../node_modules/amazeui/dist/js/amazeui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style type="text/css">
+    	ul li{list-style: none;}
+        .box{width: 600px;;border: 1px solid #ccc;}
+        h4{color:#666;}
+        h3{text-indent: 30px;}
+        p{text-indent: 30px;}
+        img{border-bottom: 1px solid #ccc;border:1px solid #ccc;margin: 10px;}
+        div button {margin-left: 9px;}
+        h2{text-align: center;margin-top: 0px;color:red;box-shadow: 0px 0px 10px red inset}
+        /*body{background: url(http://pic.35pic.com/normal/07/89/45/11295670_190950206134_2.jpg);background-size: cover;}*/
+    </style>
+</head>
+<body>
+<h3>1.WMT系列最终稿（ <a href="afinal.html" target="_blank">大于5M</a>｜｜ <a href="afinals.html" target="_blank">小于5M</a>）<span style="color:red;font-size:18px;">--->Pen需抄送color</span> </h3>
+<!-- <img src="../imgs/14.png">
+</body> -->
+<h3>2.客供档案 <a href="./bfinal.html" target="_blank">最终稿</a></h3>
+<h3>3.非WMT最终稿</h3>
+<div style="padding-left: 30px;">
+  <button class="btn btn-success">CAB <span class="badge" style="margin-top: -15px;">新</span></button>
+  <button class="btn">LNC<span class="badge" style="color:;margin-top: -15px;">邮件</span></button>
+</div>
+<div style="width:90%;margin-left:28px;">
+  <div style="padding:50px;border:1px solid #ccc;margin:10px;" class="box0">
+   <h4 style="color: red;">CAB最终稿需要用<a href="https://wetransfer.com" target="_blank">wetransfer</a>上传</h4>
+   <h4>收件人: <a href="javascript:void(0)">sumiller@blue-soho.com</a></h4>
+   <h4>抄送：service</h4>
+   <h4>Subject: <a href="javascript:void(0)">sumiller@blue-soho.com </a> sent you files via WeTransfer / B170949_CAB</h4>
+    Hi Susan, <br>
+<br>
+The translated final file has been sent to you through We transfer, please confirm receipt. <br>
+<br>
+Link: https://we.tl/o0mkPUEQx0 <br>
+<br>
+LB006_063_827646_01 <br>
+<br>
+Thanks & Best Regards <br>
+ <br>
+John Chen <br>
+======================== <br>
+BMK//AHI International, Ltd. <br>
+Tel: +86  0769-8176-0350 / 8507-7650 / 8176-0348 <br>
+Fax: +86  0769-8176-0349 <br>
+  </div>
+  <div style="padding:25px;border:1px solid #ccc;margin:10px;display: none;width:80%;" class="box1">
+    <h4>收件人: <a href="javascript:void(0)">ccorbisiero@lcibrands.com</a></h4>
+    <h4>抄送：service</h4>
+    <h4>Subject: Release final artwork for LNC / B170808</h4>
+   Hi Cherie,<br>
+<br>
+Here is the final artwork of following item, please confirm receipt.<br><br>
+
+LNC_17080801_xxxxxxxx_xxxx_HT<br>
+<br>
+We have provided the files in 2 formats for you (Illustrator files, and PDF files). The artwork is exactly the same in each format, BUT they are for different purposes.<br><br>
+
+Illustrator format (AI files) --- these are for PRINTING ONLY - please send these to your PRINTER.<br>
+PDF format --- these are for your visual REFERENCE ONLY. These files are locked, so that no changes can be made. Do not mass print from the PDFs!<br><br>
+
+
+Thanks & Best Regards<br><br>
+
+Simon Chen<br>
+========================<br>
+BMK//AHI International, Ltd.<br>
+Tel: +86  0769-8176-0350 / 8507-7650 / 8176-0348<br>
+Fax: +86  0769-8176-0349<br>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(function(){
+    $('.btn').click(function(){
+      var num=$('.btn').index(this)
+      $(this).addClass('btn-success').siblings().removeClass('btn-success')
+      $('.box'+num).show().siblings().hide()
+    })
+  })
+</script>
+</body>
+</html>

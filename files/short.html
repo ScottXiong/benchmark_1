@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html >
+  <head>
+     <meta charset="utf-8">
+     <title>业务部工作流程</title>
+     <script type="text/javascript" src="../node_modules/angular/angular.js"></script>
+      <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+       <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+     <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="../node_modules/amazeui/dist/css/amazeui.css">
+     <script type="text/javascript" src="../node_modules/amazeui/dist/js/amazeui.min.js"></script>
+     <script >
+       var app=angular.module('test',[])
+       app.controller('con1',function($scope,$http){
+
+         $scope.arr=[
+            {name:"ACA",s:"Access_Asia"},
+            {name:"CLV",s:'The Clever Factory/China'},
+            {name:'PLG',s:'翻译公司的'},
+            {name:'AIC',s:"All In The Cards "},
+            {name:'CDL',s:"Creative Design Ltd.（会退信，要加foxmail邮箱）"},
+            {name:"ALM",s:"Almar Sales Company/China"},
+            {name:'QTP',s:'Qtop'},
+            {name:"GEM",s:'Gemmy Industries Hk Limited/China'},
+            {name:'SUM',s:'Summer Decor'},
+            {name:"MSO",s:'Mello_Smello'},
+            {name:'LKC',s:'Long_King'},
+            {name:"MSI",s:'MSink(一家与我们有印刷业务合作的公司)'},
+            {name:"BMT",s:'Best_Made_Toys'},
+            {name:"MTY",s:'Dan_Dee'},
+            {name:'MET',s:'Merryart'},
+            {name:'BFA',s:'Beifa'},
+            {name:'MIL',s:'Milan'},
+            {name:"FLS",s:'Fuchang'},
+            {name:"SIM",s:"Simply_She/Mission_Pets(new)"},
+            {name:"SES",s:"Seasons"},
+            {name:"EAS",s:"Easter Unlimited / Fun World/China"},
+            {name:"GTI",s:"Sunstar Industries Inc./China"},
+            {name:"GTP",s:" GT_Plus/China"},
+            {name:"HOR",s:" Horizon Group USA/China"},
+            {name:"ILT",s:" Inliten, LLC/China"},
+            {name:"LKC",s:" Long King Printing HK Company Limited/China"},
+            {name:"MAG",s:" Magic Power Company Limited/China"},
+            {name:"MET",s:" Ningbo Merryart Glow-tech Co.,Ltd/China"},
+            {name:'MJT',s:'M&J Trimming Company, Inc./China'},
+            {name:'MSO',s:'MinMor Industries dba Mello Smello/USA'},
+            {name:'NEO',s:'Star Bright International Limitd/China'},
+            {name:'OCC',s:'Occasions Limited/China'},
+            {name:'PAA',s:'LF PRODUCTS PTE LTD'},
+            {name:'PAN',s:'Pan Asian Ceations Limited'},
+            {name:'QTP',s:'Ningbo Qtop Imp&Exp Co., Ltd.'},
+            {name:'SES',s:'Seasons(Hk)Ltd'},
+            {name:'SHI',s:'Sun Hill Industries Inc'},
+            {name:'SIM',s:'Simplyshe'},
+            {name:"SMC",s:"Smart Concept Trading Limited"},
+            {name:"SRT",s:"Starlite Creations Inc."},
+            {name:"SVI",s:"Seasonal Visions International Ltd."},
+            {name:"UNC",s:"SUniversal Candle Co., Ltd."},
+            {name:"VFS",s:"Vietnam First Stationery Co.,Ltd./Vietnam"},
+            {name:"WIR",s:"Wonderful Enterprise CO.,LTD."},
+         ];
+        })
+     </script>
+ </head>
+ <body>
+  
+   <div ng-app='test' ng-controller='con1' class="container">
+    <form class="form-horizontal" style="margin-top:40px;">
+          <div class="form-group">
+            <label for="inputPassword" class="col-sm-2 control-label">公司</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputPassword" placeholder="请输入关键字,区分大小写哦z">
+            </div>
+          </div>
+   </form>
+   <table class="table table-hover table-striped table-bordered text-center col-md-6">
+     <thead>
+       <tr class="success">
+         <th class="text-center">shortName</th>
+         <th class="text-center">fullName</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr ng-repeat="val in arr  | orderBy:name" >
+         <td>{{val.name}}</td>
+         <td>{{val.s}}</td> 
+       </tr>
+     </tbody>
+   </table>
+   </div>
+   <script>
+     $(function() {
+      $('#inputPassword').keyup(function(){
+        $('table tbody tr').hide()
+          .filter(":contains('" +($(this).val()) + "')").show();
+      }).keyup();//DOM加载完时，绑定事件完成之后立即触发
+    });
+   </script>
+ </body>
+</html>

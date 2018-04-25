@@ -16,11 +16,17 @@
      <script type="text/javascript" src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script>
      <style type="text/css">
        img{border-bottom: 1px dotted #ccc;}
-       h3{font-family: "Arial";font-size: 20px;text-indent: 20px;color:purple;line-height: 30px;}
-       h3:hover{color: blue;text-indent: 20px;}
-       ul li {list-style: none;}
+       /*h3{font-family: "Arial";font-size: 20px;text-indent: 20px;color:purple;line-height: 30px;}*/
+       /*h3:hover{color: blue;text-indent: 20px;}*/
+       ul li {list-style: none;font-weight: bold}
        th{text-align: center;font-size: 18px;font-weight: bold;color: red;}
        span{color: red;}
+       /*body{
+        font-size: 15px;
+        font-family: "Arial";
+        line-height: 30px;
+        background: #fff;
+       }*/
        /*body{background: #ccc;}*/
      </style>
       <script >
@@ -52,50 +58,57 @@
  <body>
   <div class="list-group">
     <a href="javascript:window.history.go(-1)" class="list-group-item danger" style="font-weight: bold;">
-         <span class="glyphicon glyphicon-chevron-left back" style="color: blue;">返回</span><span style="margin-left: 34%" class="disabled">CWMT流程</span>
+         <span class="glyphicon glyphicon-chevron-left back" style="color: blue;">返回</span><span style="margin-left: 34%" class="disabled">CWMT-CA</span>
       </a>
   </div>
    <div ng-app='test' ng-controller='con1'>
-     <!-- <table class="table table-bordered table-hover table-striped" style="text-align: center;width: 95%;margin: 0 auto;border-radius: 5px;">
-     	<thead>
-     		<tr class="success">
-     			<th>Person</th>
-     			<th>Identity</th>
-     			<th>Category</th>
-     			<th>Program</th>
-     		</tr>
-     	</thead>
-     	<tbody>
-     		<tr ng-repeat="val in arr">
-     			<td>{{val.person}}</td>
-     			<td>{{val.identity}}</td>
-     			<td>{{val.category}}</td>
-     			<td>{{val.program}}</td>
-     		</tr>
-     	</tbody>
-     </table> -->
-     <div class="container">
-        <h3>所有初稿是给cawmpackaging@walmart.com确认</h3>
-        <table class="table table-striped  table-bordered col-md-6 text-center">
-          <tr class="success"><td colspan="3">D18修改稿</td></tr>
-           <tr class="info">
-             <td>if buyer is</td>
-             <td>other's decision contain changes?</td>
-             <td>right set</td>
-           </tr>
-           <tr>
-             <td rowspan="2"><br>Daniela Cviticanin</td>
-             <td class="text-center"><span>yes</span></td>
-             <td>reviewer and approve</td>
-           </tr>
-            <tr>
-             
-             <td class="text-center"><span>no</span></td>
-             <td>reviewer, disabled</td>
-           </tr>
      
-         </table>
+     <div class="container">
 
+      <div class="media">
+        <div class="media-left media-middle">
+          <a href="#">
+            <!-- <img class="media-object" src="../imgs/ca2018.png" alt="..."  > -->
+          </a>
+        </div>
+        <div class="media-body" >
+          <h3 class="media-heading">Canadiana</h3>
+          <h4><img src="../imgs/num-1.png" alt=""> 初稿给ps (wendy:cawmpackaging@walmart.com）确认 <br></h4>
+          <h4><img src="../imgs/num-2.png" alt=""> &nbsp;ps (wendy）确认,然后加以下人：<br><br></h4>
+          <table class="table table-striped table-hover table-bordered" style="width: 90%;margin-left: 20px;">
+            
+            <tr>
+              <td rowspan="2" style="padding: 5px;">&nbsp;&nbsp;<img src="../imgs/ca2018.png" alt=""></td>
+              <td><br><h4 style="color: red">Reviewer and approver</h4></td>
+              <td >
+                ing.lim@walmart.com <br>
+                nazeema.mohabir@walmart.com <br>
+                cawmpackaging@walmart.com <br>
+                supplier
+              </td>
+            </tr>
+            <tr>
+              <td><br><h4 style="color: blue;text-align: center;">Reviewer</h4></td>
+              <td> <br>
+                teresa.isabella@walmart.com <br><br>
+                lindsay.resendes@walmart.com
+              </td>
+            </tr>
+          </table>
+          <h4><img src="../imgs/num-3.png" alt=""> 确认后送plg</h4>
+          <table class="table-bordered table text-center table-hover" style="width: 90%;margin-left: 20px;margin-top: 30px;">
+            <tr>
+              <td colspan="2"><h5>然后回来翻译后给以下人最后确认，subject后面加上<span style="color: red;">Post-translation </span></h5></td>
+            </tr>
+            <tr>
+              <td style="padding-top: 20px;">Reviewer & Approval</td>
+              <td> cawmpackaging@walmart.com —ps (wendy）<br> supplier</td>
+            </tr>
+          </table>
+         
+        </div>
+      </div>
+      
      </div>
       
   </div>

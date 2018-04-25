@@ -9,6 +9,8 @@
      <script src='http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js'></script>
      <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
      <link rel="stylesheet" type="text/css" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css">
+     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
      <!-- <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css"> -->
     <!--  <link rel="stylesheet" type="text/css" href="../css/index.css"> -->
      <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -16,11 +18,17 @@
      <script type="text/javascript" src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script>
      <style type="text/css">
        img{border-bottom: 1px dotted #ccc;}
-       h3{font-family: "Arial";font-size: 20px;text-indent: 20px;color:purple;line-height: 30px;}
-       h3:hover{color: blue;text-indent: 20px;}
-       ul li {list-style: none;}
+       /*h3{font-family: "Arial";font-size: 20px;text-indent: 20px;color:purple;line-height: 30px;}*/
+       /*h3:hover{color: blue;text-indent: 20px;}*/
+       ul li {list-style: none;font-weight: bold}
        th{text-align: center;font-size: 18px;font-weight: bold;color: red;}
        span{color: red;}
+       /*body{
+        font-size: 15px;
+        font-family: "Arial";
+        line-height: 30px;
+        background: #fff;
+       }*/
        /*body{background: #ccc;}*/
      </style>
       <script >
@@ -50,52 +58,24 @@
      </script>
  </head>
  <body>
-  <div class="list-group">
-    <a href="javascript:window.history.go(-1)" class="list-group-item danger" style="font-weight: bold;">
-         <span class="glyphicon glyphicon-chevron-left back" style="color: blue;">返回</span><span style="margin-left: 34%" class="disabled">CWMT流程</span>
-      </a>
-  </div>
+  
    <div ng-app='test' ng-controller='con1'>
-     <!-- <table class="table table-bordered table-hover table-striped" style="text-align: center;width: 95%;margin: 0 auto;border-radius: 5px;">
-     	<thead>
-     		<tr class="success">
-     			<th>Person</th>
-     			<th>Identity</th>
-     			<th>Category</th>
-     			<th>Program</th>
-     		</tr>
-     	</thead>
-     	<tbody>
-     		<tr ng-repeat="val in arr">
-     			<td>{{val.person}}</td>
-     			<td>{{val.identity}}</td>
-     			<td>{{val.category}}</td>
-     			<td>{{val.program}}</td>
-     		</tr>
-     	</tbody>
-     </table> -->
-     <div class="container">
-        <h3>所有初稿是给cawmpackaging@walmart.com确认</h3>
-        <table class="table table-striped  table-bordered col-md-6 text-center">
-          <tr class="success"><td colspan="3">D18修改稿</td></tr>
-           <tr class="info">
-             <td>if buyer is</td>
-             <td>other's decision contain changes?</td>
-             <td>right set</td>
-           </tr>
-           <tr>
-             <td rowspan="2"><br>Daniela Cviticanin</td>
-             <td class="text-center"><span>yes</span></td>
-             <td>reviewer and approve</td>
-           </tr>
-            <tr>
-             
-             <td class="text-center"><span>no</span></td>
-             <td>reviewer, disabled</td>
-           </tr>
      
-         </table>
-
+     <div class="container">
+        <img src="../imgs/2018hw.png" alt="" style="margin: 0 auto;display: block;margin-top: 30px;">
+        <table class="table table-bordered table-hover text-center" style="margin-top: 35px;border-radius: 3px;">
+          <tr class="danger">
+            <td colspan="2" style="font-size: 18px;">加了翻译只给supplier最后确认,不要加其它wmt的人</td>
+          </tr>
+          <tr>
+            <td style="color: green;font-weight: bold;">PS</td>
+            <td style="color: purple;font-weight: bold;">CM</td>
+          </tr>
+          <tr>
+            <td>Rosemary</td>
+            <td><i class="fa fa-warning" style="color: red"></i>&nbsp;May Cheung</td>
+          </tr>
+        </table>
      </div>
       
   </div>

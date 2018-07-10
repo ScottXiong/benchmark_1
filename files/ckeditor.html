@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../ckeditor/ckeditor.js"></script>
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+	<form>
+	    <textarea name="editor1" id="editor1" rows="10" cols="80">
+	    	hello world
+	    </textarea>
+	    <script>
+	        // Replace the <textarea id="editor1"> with a CKEditor
+	        // instance, using default configuration.
+	        CKEDITOR.replace( 'editor1' );
+	    </script>
+	</form>
+</body>
+</html>

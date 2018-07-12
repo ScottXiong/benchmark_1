@@ -5,11 +5,12 @@
 	<title>Document</title>
 	<script src="../ckeditor/ckeditor.js"></script>
 	<link href="https://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.css" rel="stylesheet">
+	  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
 	<form>
 	    <textarea name="editor1" id="editor1" rows="10" cols="80">
-	    	hello world
+	    	
 	    </textarea>
 	    <script>
 	        // Replace the <textarea id="editor1"> with a CKEditor
@@ -17,5 +18,55 @@
 	        CKEDITOR.replace( 'editor1' );
 	    </script>
 	</form>
+	<div style="padding: 30px;">
+		<div>
+			<button class="btn btn-default ">初稿附加文案</button>
+			<button class="btn btn-default ">翻译附加文案</button>
+			<button class="btn btn-default ">检查附加文案</button>
+		</div>
+		<hr>
+		<div>
+			<div class="box0" style="display: none">
+						<strong>Supplier</strong>:
+				   
+					<span> As a private brand supplier to Walmart, you are solely responsible for providing a safe product (including all labeling and packaging accompanying the product) that complies with all laws. As between Walmart and the Supplier, Supplier is solely responsible for the accuracy of all product labeling. When you, through your duly authorized representative(s), &ldquo;approve&rdquo; product labels and artwork by following the process set out below, you confirm: (1) that you have reviewed this label; (2) all information provided on the label is truthful, accurate and not misleading; and (3) your contractual defense and indemnity obligations to Walmart for all claims related to the product, including claims related to the labeling. The approval of content by Walmart does not release the Supplier from any legal responsibility.</span>
+				    <br>	
+					<span style="text-decoration: underline;">Please review this packaging proof and provide your feedback in proof within 2 business days (or 48 hours) of the date this email was sent.</span> <br/><br/>
+
+					<strong>Supplier</strong>: Please carefully review artwork in this proof and verify that all of the following are accurate:<br />
+					&middot; UPCs and VSNs<br />
+					&middot; Item descriptions, feature copy and product claims<br />
+					&middot; Warnings, cautions, and warranties, including the placement and size of graphic elements and fonts<br />
+					&middot; Sizing information (net wt., pieces, dimensions, etc.) per FPLA, NIST, and all other federal and state regulatory guidelines<br />
+					<br />
+					<strong>Product Development Manager</strong>: Please review artwork in this proof to verify that the artwork meets objectives in terms of:<br />
+					&middot; VSNs<br />
+					&middot; Product name and photography<br />
+					&middot; Packaging formats/orientation<br />
+					&middot; Feature and benefit communication/hierarchy<br />
+					Walmart Packaging team reviews the copy, dielines and graphic assets to ensure consistency within the brand. 
+			</div>
+			<div class="box1" style="display: none">
+				<p>
+					Here is the link to download files with translations for your final approval. Please double check the copy, dieline, codes etc. <br>
+					Once we got your approval, we will release the final files to you.
+				</p>
+
+			</div>
+			<div class="box2" style="display: none">
+				<p>Please click "go to proof" to see the comments from our proofing team and make revisions accordingly. Once you finished, please send back the requested files to our team in this address: <br>
+
+				<a href="#">service@benchmarkdesign.org</a> </p>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function(){
+              $('.btn').click(function(){
+                 var n=$(this).index();
+                 $('.box'+n).show().siblings().hide()
+              })
+		})
+	</script>
 </body>
 </html>

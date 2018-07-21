@@ -16,9 +16,35 @@
      <script type="text/javascript" src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script>
     
      <style type="text/css">
-       body{background:url("./bg/10.jpg");z-index: 19;background-size: cover;}
+       body{background:url("./bg/3.jpg");z-index: 19;background-size: cover;}
        .aaa{
         filter:shadow(Color=#f00000,Direction=45,Strength=8);
+       }
+       #notes{
+         float: right;
+         width: 20%;
+        color: #ff0066;
+        font-family: "Comic Sans MS";
+        font-weight: bold;
+        padding: 10px 10px 0px 10px;
+       }
+       #notes img{
+        width: 17px;
+        height: 17px;
+       }
+       .notes{
+        font-size: 6px;
+        color: #666;
+        display: inline-block;
+         position: relative;
+         right: 0
+       }
+       .text-right{
+         
+       }
+       .a3{
+        display: inline;
+        position: absolute;
        }
      
      </style>
@@ -116,10 +142,10 @@
    <div ng-app='test' ng-controller='con1'>
       <!-- 最外层start -->
       <div class="wrapper containers">
-        <div class="left" style="background: #FAF7E8;padding: 20px;border-radius:8px;">
+        <div class="left" style="background:#fff;padding: 20px;border-radius:8px;">
           <ul ng-repeat="v in arr">
             <li class="col-md-offset-2">
-              <a href={{v.tar}} target="myFrame" ng-click="add()">{{v.c}}</a>
+              <a href={{v.tar}} target="myFrame" ng-click="add()" style="color:#777;font-weight: bold">{{v.c}}</a>
             </li>
           </ul>
         </div>
@@ -130,6 +156,17 @@
                <h4>It may take much time for the first loading, since the server is located in USA. </h4>
             </div>
           </iframe>
+        </div>
+        <div id="notes" style="">
+        <h4 style="color: red">notes:</h4>
+        <hr>
+         <span class="a3">1,&nbsp;&nbsp;加拿大的东西，无论Louise在PHQ上如何决定，必须有Rosemary的决定才可写单给设计 <span class="text-right notes">2018.07.20</span></span> <br> <br> <br>
+          <span class="a3">2,&nbsp;
+Brian Hopkins的正确邮箱为 <span style="color: blue">james.hopkins@walmart.com</span> <span class="text-right notes">2018.07.20</span></span> <br><br><br>
+          <span class="a3">3,&nbsp;
+ WMT_USA: 加翻译的档案，只给客人确认，请记得把<span style="color: blue">SNOW</span>删掉！ <span class="text-right notes">2018.07.21</span></span>
+      
+         </div>       
         </div>
       </div>
       <!-- 最外层end --> 

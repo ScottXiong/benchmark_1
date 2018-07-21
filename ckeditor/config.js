@@ -13,25 +13,21 @@ config.language = 'zh-cn'; // 配置语言
       config.forcePasteAsPlainText = false;
       config.width = 'auto'; // 宽度   
 	   config.height = '520px'; // 高度  
+	   config.colorButton_colors = `
+	   000,800000,8B4513,2F4F4F,008080,000080,4B0082,696969,B22222,A52A2A,DAA520,006400,40E0D0,00F,33ffcc,ff0000,cc0000,ff0066,33ff00,660099,330066,000000,0000ff,996699 
+	   `
+  
+   config.toolbar = [
+    ['Bold', 'Italic', 'Underline', 'Strike','SpecialChar'],
+    ['TextColor', 'BGColor'],
+    [ 'Redo', 'Undo' ],
+    // ['JustifyLeft', 'JustifyCenter', 'JustifyRight'],
+    // ['SelectAll','Cut'],
+    ['Font'],
+    ['Maximize']
+   
 
-
-	// The toolbar groups arrangement, optimized for two toolbar rows.
-	config.toolbarGroups = [
-		
-		
-		{ name: ['others']},
-		
-		{ name: 'basicstyles', groups: [ 'basicstyles'] },
-		{ name: 'basicstyles', groups: [ 'undo','redo',] },
-		{name:'colors'},
-		{ name: 'paragraph',   groups: [  'align' ] },
-		{ name: 'styles' },
-		
-		
-		
-	
-	];
-
+];
 	// Remove some buttons provided by the standard plugins, which are
 	// not needed in the Standard(s) toolbar.
 	config.removeButtons = 'Styles,Format,Subscript,Superscript';

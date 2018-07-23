@@ -21,11 +21,16 @@
        h3:hover{color: blue;text-indent: 20px;}
        ul li {list-style: none;line-height: 22px;}
        th{text-align: center;font-size: 18px;font-weight: bold;color: red;}
-       span{color: red;}
+      
        /*body{background: #ccc;}*/
        #message{
         padding: 35px;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
+        border: 2px dotted #ccc;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 50px;
 
        }
        .a1{
@@ -34,79 +39,190 @@
        .a2{
         margin-left: 5%;
        }
+
+       table tr td{
+        width: 18%;
+        border: 1px solid #ccc;
+       }
+       .button{
+        position: relative;
+
+        left: 10%;
+        top: 7px;
+       }
+       .time1{
+        position: absolute;
+       right: 10%;
+       top:17px;
+       color: #ccc;
+       }
      </style>
      
  </head>
  <body>
-  <div id="message">
-    Dear Supplier： <br>
- <br>
-<p> <strong>PLEASE NOTE:</strong> <span style="border-bottom: 1px solid black;">This is Not a commitment for product. </span> </p>
+ <div class="button">
+    <button class="btn btn-success">standard</button>
+    <button class="btn btn-default">approved</button>
+ </div>
+ <p class="time1">上次更新: 2018.07.23</p>
+     <div>
+       <div id="message" class="message0">
+       Dear Supplier： <br>
+    <br>
+   <p> <strong>PLEASE NOTE:</strong> <span style="border-bottom: 1px solid black;">This is Not a commitment for product. </span> </p>
 
-<p>Due to packaging process timing, we must collect necessary information prior to commitments, so we can start adaptation in the event you receive a commitment for your item(s). </p>
+   <p>Due to packaging process timing, we must collect necessary information prior to commitments, so we can start adaptation in the event you receive a commitment for your item(s). </p>
 
-<p>Attached is a blank packaging form, which needs to be completed for the following items. </p>
+   <p>Attached is a blank packaging form, which needs to be completed for the following items. </p>
 
-<img src="../imgs/pf.png" alt="">
-<p>Please return the completed packaging form(s) by <span style="color: black;background: yellow">XX/XX/XXXX</span></p>
+   <img src="../imgs/pf.png" alt="" style="width: 90%">
+   <p>Please return the completed packaging form(s) by <span style="color: black;background: yellow">XX/XX/XXXX</span></p>
 
-<p><strong>If your item(s) require photography:</strong>  Please submit images for approval OR notify Benchmark that item(s) packaging requires photography.</p>  
+   <p><strong>If your item(s) require photography:</strong>  Please submit images for approval OR notify Benchmark that item(s) packaging requires photography.</p>  
 
-<p style="text-decoration: underline;">The packaging process will take on average 4-6 weeks from the time you have submitted your complete and accurate packaging form and dielines to final file release depending on complexity. Failure to provide all of the required information will delay the start and completion of your packaging.</p>
+   <p style="text-decoration: underline;">The packaging process will take on average 4-6 weeks from the time you have submitted your complete and accurate packaging form and dielines to final file release depending on complexity. Failure to provide all of the required information will delay the start and completion of your packaging.</p>
 
-<p>
-Please note that we <strong>MUST</strong> have the items listed below before we will start the packaging process. </p>
+   <p>
+   Please note that we <strong>MUST</strong> have the items listed below before we will start the packaging process. </p>
 
-<p class="a1">·       Packaging Form completely filled out including Section 5: Key Delivery Dates.</p> 
+   <p class="a1">·       Packaging Form completely filled out including Section 5: Key Delivery Dates.</p> 
 
-<p class="a2">-        List only the contacts that you want to review the proof.  We will not move forward until all required approver(s) listed on the packaging form have completed their review.</p>
+   <p class="a2">-        List only the contacts that you want to review the proof.  We will not move forward until all required approver(s) listed on the packaging form have completed their review.</p>
 
-<p class="a2">-        All fields must be filled out.  Place an “NA” when a field is not applicable.</p>
+   <p class="a2">-        All fields must be filled out.  Place an “NA” when a field is not applicable.</p>
 
-<p class="a2" >-        Warning verbiage, size, and location must be provided by supplier. </p>
+   <p class="a2" >-        Warning verbiage, size, and location must be provided by supplier. </p>
 
-<p class="a1">·       Dielines for your product(s)</p>
+   <p class="a1">·       Dielines for your product(s)</p>
 
-<p class="a2">-        Adobe Illustrator file.  No images or art placed within dieline. </p>
+   <p class="a2">-        Adobe Illustrator file.  No images or art placed within dieline. </p>
 
-<p class="a1">·       A low-res image of your item(s)</p>
+   <p class="a1">·       A low-res image of your item(s)</p>
 
-<p class="a2">-        One solo shot per item type.  </p>
+   <p class="a2">-        One solo shot per item type.  </p>
 
-<p class="a2">-        If there is more than one version (colorway, pattern), send a group shot along with the solo shot. </p>
+   <p class="a2">-        If there is more than one version (colorway, pattern), send a group shot along with the solo shot. </p>
 
-<p class="a1">·       For PDQs, sidekicks, pallets and other display packaging</p>
+   <p class="a1">·       For PDQs, sidekicks, pallets and other display packaging</p>
 
-<p class="a2">-        Photo of mockup display.</p>
-<p class="a2">
--        3D image to understand the structure; include inner pack. </p>
+   <p class="a2">-        Photo of mockup display.</p>
+   <p class="a2">
+   -        3D image to understand the structure; include inner pack. </p>
 
-<strong>Packaging Process</strong>
+   <strong>Packaging Process</strong>
 
-<p class="a1">·       Upon receipt of completed packaging form and dielines, Benchmark will prepare and send a quotation that must be signed and returned.</p>
+   <p class="a1">·       Upon receipt of completed packaging form and dielines, Benchmark will prepare and send a quotation that must be signed and returned.</p>
 
-<p class="a1">·       Once the signed quote is returned to Benchmark, artwork will be routed via ProofHQ, an online proofing system, for supplier review typically within 2-3 business days depending on the quantity and complexity of art files.</p>
+   <p class="a1">·       Once the signed quote is returned to Benchmark, artwork will be routed via ProofHQ, an online proofing system, for supplier review typically within 2-3 business days depending on the quantity and complexity of art files.</p>
 
-<p class="a1">·       All revision comments should be added in ProofHQ.  Typically the supplier will have 2 business days to add feedback.</p>
+   <p class="a1">·       All revision comments should be added in ProofHQ.  Typically the supplier will have 2 business days to add feedback.</p>
 
-<p class="a1">·       Once files are approved by both Walmart Buyer and supplier, Benchmark adds in Spanish translation (if needed) from a Walmart approved translation agency and re-submits translated files to the supplier for final approval. </p> 
+   <p class="a1">·       Once files are approved by both Walmart Buyer and supplier, Benchmark adds in Spanish translation (if needed) from a Walmart approved translation agency and re-submits translated files to the supplier for final approval. </p> 
 
-<p class="a1">·       Once the translated files are approved by the supplier, final files are released within 1 working day of all proof stakeholders' approval, and Benchmark will archive the final approved files.</p>
+   <p class="a1">·       Once the translated files are approved by the supplier, final files are released within 1 working day of all proof stakeholders' approval, and Benchmark will archive the final approved files.</p>
 
-<p class="a1">·       Please note that speed of artwork release depends on accurate proofing and timely stakeholder proof review and approval. </p>
+   <p class="a1">·       Please note that speed of artwork release depends on accurate proofing and timely stakeholder proof review and approval. </p>
 
-<p>If your item(s) qualifies for the Made in USA or Assembled in USA logo, please download the current Campaign Usage Guide to begin certifying your products online by going to Retail Link>Packaging Toolkits>U.S. Manufacturing Information> US Manufacturing Campaign Usage Guide.   The online tool called JUMP will help you with this process. You will need to register before you can start certifying your products online. Compliance is mandatory.  To begin certification of your products please visit <a href="http://engage.walmart-jump.com">http://engage.walmart-jump.com</a> , register your company, and add your items’ information. Please refer to the attached document for more information.</p>
+   <p>If your item(s) qualifies for the Made in USA or Assembled in USA logo, please download the current Campaign Usage Guide to begin certifying your products online by going to Retail Link>Packaging Toolkits>U.S. Manufacturing Information> US Manufacturing Campaign Usage Guide.   The online tool called JUMP will help you with this process. You will need to register before you can start certifying your products online. Compliance is mandatory.  To begin certification of your products please visit <a href="http://engage.walmart-jump.com">http://engage.walmart-jump.com</a> , register your company, and add your items’ information. Please refer to the attached document for more information.</p>
 
-<p>If you have any questions, please feel free to contact us. The team here at Benchmark is looking forward to working with you!</p>
+   <p>If you have any questions, please feel free to contact us. The team here at Benchmark is looking forward to working with you!</p>
 
-Thanks & Best Regards<br>
- <br>
-Scott Xiong<br>
-========================<br>
-BMK//AHI International, Ltd.<br>
-Tel: +86  0769-8176-0350 / 8507-7650 / 8176-0348<br>
-Fax: +86  0769-8176-0349<br>
-<img src="../imgs/pfimage.png" alt="">
-  </div>
+   Thanks & Best Regards<br>
+    <br>
+   Scott Xiong<br>
+   ========================<br>
+   BMK//AHI International, Ltd.<br>
+   Tel: +86  0769-8176-0350 / 8507-7650 / 8176-0348<br>
+   Fax: +86  0769-8176-0349<br>
+   <!-- <img src="../imgs/pfimage.png" alt=""> -->
+     </div>
+        <div id="message" class="message1">
+        Dear Supplier: <br><br>
+      <p><strong>PLEASE NOTE:</strong><span style="color: red;border-bottom: 1px solid red"> This is Not a commitment for product. </span> </p> 
+
+      <p>Due to packaging process timing, we must collect necessary information prior to commitments, so we can start proofing in the event you receive a commitment for your item(s). </p>
+
+      <p>Attached is a blank packaging form, which needs to be completed for the following items.  </p>
+      <table cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="width: 102px;">&nbsp;</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <br>
+      <p>Please return the completed packaging form(s) and files for proofing by <span style="background: yellow">XX/XX/XXXX.</span></p> 
+      <p><strong>If your item(s) require photography:</strong>  Please submit images for approval OR notify Benchmark that item(s) packaging requires photography. </p> 
+      <p style="text-decoration: underline;">The packaging process will take on average 4-6 weeks from the time you have submitted your complete and accurate packaging form and proofing files to final file release depending on complexity. Failure to provide all of the required information will delay the start and completion of your packaging.
+      </p>
+      <p>Please note that we <strong style="font-size: 14px;">MUST</strong> have the items listed below before we will start the packaging process.  <br>
+      <span class="a1">• &nbsp;&nbsp;Packaging Form completely filled out including Section 5: Key Delivery Dates.</span> <br>
+      <span class="a2">- List the primary contact to receive Style Guide & Template access.</span> <br>
+      <span class="a2">- List only the contacts that you want to review the proof. </span>  <br>
+      <span class="a2">- All fields must be filled out.  Place an “NA” when a field is not applicable.</span> <br>
+      <span class="a2">- Warning verbiage, size, and location must be provided by supplier.</span>  <br>
+      <span class="a1">• &nbsp;&nbsp;A low-res image of your item(s)</span> <br>
+      <span class="a2">- One solo shot per item type.</span>   <br>
+      <span class="a2">- If there is more than one version (colorway, pattern), send a group shot along with the solo shot.</span>  <br>
+      <span class="a1">• &nbsp;&nbsp;For PDQs, sidekicks, pallets and other display packaging</span> <br>
+      <span class="a2">- Photo of mockup display.</span> <br>
+      <span class="a2">- 3D image to understand the structure; include inner pack.</span></p>
+
+      <p>Packaging Process <br>
+      <span class="a1">•&nbsp;&nbsp; Upon receipt of completed packaging form and proofing files, Benchmark will prepare and send a quotation that must be signed and returned.</span> <br>
+      <span class="a1">•&nbsp;&nbsp; Once the signed quote is returned to Benchmark, artwork will be routed via ProofHQ, an online proofing system, for supplier review typically within 3-7 business days depending on the quantity of art files and the number of supplier file errors.</span><br>
+      <span class="a1">• &nbsp;&nbsp;Supplier’s proof reviewers will typically have 3-7 business days to correct the files based on comments from Benchmark or provide feedback regarding Benchmark’s comments depending on the quantity of files and the number of Benchmark comments.</span><br>
+      <span class="a1">• &nbsp;&nbsp;Once the supplier’s art files are approved by both Walmart Buyer and Benchmark, the supplier adds in Spanish translation (if needed) from a WMT approved translation agency and then re-submits final files with translation to BMK for final evaluation and archiving.</span><br>
+      <span class="a1">• &nbsp;&nbsp;Final PDF files are released within 1 working day of all proof stakeholders’ approval. </span><br>
+      <span class="a1">• &nbsp;&nbsp;Please note that speed of artwork release depends on accurate proofing and timely stakeholder proof review and approval.</span>
+      </p>
+      <p>If your item(s) qualifies for the Made in USA or Assembled in USA logo, please download the current Campaign Usage Guide to begin certifying your products online by going to Retail Link>Packaging Toolkits>U.S. Manufacturing Information> US Manufacturing Campaign Usage Guide.   The online tool called JUMP will help you with this process. You will need to register before you can start certifying your products online. Compliance is mandatory.  To begin certification of your products please visit <a href="http://engage.walmart-jump.com">http://engage.walmart-jump.com</a> , register your company, and add your items’ information. Please refer to the attached document for more information.</p>
+
+      <p>If you have any questions, please feel free to contact us. The team here at Benchmark is looking forward to working with you!</p>
+
+      Scott Xiong <br>
+      ========================<br>
+      BMK//AHI International, Ltd.<br>
+      Tel: +86 0769-8176-0350 / 8507-7650 / 8176-0348<br>
+      Fax: +86 0769-8176-0349<br>
+
+        </div>
+   </div>
+   <script>
+    $(function(){
+      $('.btn').click(function(){
+        var num=$(this).index()
+        if (num==0) {
+            $('.message0').show()
+            $('.message1').hide()
+            $(this).addClass('btn-success').siblings().removeClass('btn-success').addClass('btn-default')
+        }else{
+             $('.message1').show()
+            $('.message0').hide()
+             $(this).addClass('btn-success').siblings().removeClass('btn-success').addClass('btn-default')
+        }
+        // $(this).addClass('btn-primary')
+        // $('.message'+num).show()
+        // $(this).siblings().removeClass('btn-primary').addClass('btn-default')
+        // $('.message'+num).show()
+      })
+    })
+  </script>
  </body>
 </html>

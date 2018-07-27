@@ -12,7 +12,7 @@ config.language = 'zh-cn'; // 配置语言
 	config.removePlugins = 'elementspath,resize';
       config.forcePasteAsPlainText = false;
       config.width = 'auto'; // 宽度   
-	   config.height = '520px'; // 高度  
+	   config.height = '265px'; // 高度  
 	   config.colorButton_colors = `
 	   000,800000,8B4513,2F4F4F,008080,000080,4B0082,696969,B22222,A52A2A,DAA520,006400,40E0D0,00F,33ffcc,ff0000,cc0000,ff0066,33ff00,660099,330066,000000,0000ff,996699 
 	   `
